@@ -1,0 +1,3303 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio,
+video {
+margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+ line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+ blockquote:before, blockquote:after, q:before, q:after {
+content: ''; content: none;
+}
+table {
+border-collapse: collapse; border-spacing: 0;
+}
+
+h2{
+  font-size: 1.5em;
+  text-align: center;
+  border: solid 1px black;
+  background-color: rgb(136, 255, 89);
+}
+
+p{
+  font-size: 1em;
+}
+
+th{
+  background-color: rgb(136, 255, 89);
+}
+
+td, th{
+  border: solid 0.5px black;
+  padding: 6px;
+}
+
+/*HEADER*/
+
+h1{
+  font-size: 3em;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid black;
+  padding: 40px;
+  background-color: rgb(136, 255, 89);
+}
+
+header img{
+  width: 150px;
+}
+
+/*CORPS*/
+.corps{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+tr:first-child td:nth-child(1) {
+  border-right: 1px black solid;
+}
+
+.enregistrerHoraire tr:first-child td:nth-child(6) {
+  border-bottom: 1px white solid;
+}
+
+tr:first-child td:nth-child(5) {
+  border-right: 1px black solid;
+}
+
+tr:nth-child(2) td:nth-child(5) {
+  border-right: 1px black solid;
+}
+
+tr:nth-child(3) td:nth-child(1) {
+  border-right: 1px black solid;
+}
+
+tr:nth-child(3) td:nth-child(5) {
+  border-right: 1px black solid;
+}
+
+tr:nth-child(4) td:nth-child(1) {
+  border-right: 1px black solid;
+}
+
+tr:nth-child(4) td:nth-child(6) {
+  border-right: 1px black solid;
+}
+
+tr:nth-child(4) {
+  border-top: 1px solid white;
+}
+
+
+
+.ElementImpaire{
+  background-color: rgb(136, 255, 89);
+}
+
+/*NAV*/
+.Principal{
+    width: 25%;
+    border-radius: 4px;
+    border-collapse: collapse;
+    border-style:hidden  ;
+    box-shadow: 0 0 0 1px black;
+    height:100%;
+}
+
+.Principal ul li{
+  padding: 20px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+.Principal ul li a:hover{
+  color: red;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.Principal .onEst{
+    border-radius: 4px;
+    border-collapse: collapse;
+    border-style:hidden  ;
+    box-shadow: 0 0 0 3px     #1e90ff;
+}
+
+/*USECASE*/
+.useCase{
+  width: 100%;
+}
+
+.useCase nav{
+  margin-left: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(136, 255, 89);
+
+}
+
+.useCase nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  transform: translate(0%, -0%);
+  align-items: center
+}
+
+.useCase nav ul li {
+    position: relative;
+    color: #000;
+    line-height: 1;
+    transition: 0.2s all linear;
+    cursor: pointer;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.useCase nav ul li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 100%;
+    border-bottom: 2.5px solid     #1e90ff;
+    transition: 0.2s all linear;
+}
+
+.useCase nav ul li:hover::before {
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition-delay: 0.1s;
+    border-bottom-color: #1e90ff;
+    z-index: -1;
+}
+
+.useCase nav ul li:hover ~ .useCase nav ul li::before {
+    left: 0;
+}
+
+.useCase nav ul li:active {
+    background: #1e90ff;
+    color: #fff;
+}
+
+.useCase .onEst{
+    font-size:1.3em;
+    border-bottom: 2px solid #1e90ff;
+    padding-bottom:3px;
+}
+
+/*CAS UTILISATION EN LUI MEME*/
+.casUtilisation{
+  padding: 20px;
+  padding-right: 0px;
+}
+
+.Annuler{
+  text-decoration: none;
+  color: black;
+  border: solid 1px black;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: rgb(136, 255, 89);
+}
+
+.Annuler{
+  width: 50px;
+}
+
+.Ajouter{
+  border: solid 1px black;
+  border-radius: 50%;
+  display: inline;
+  text-decoration: none;
+  color: black;
+  padding: 4px;
+}
+
+.Confirmation{
+  width: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nomPrenom{
+  text-align: center;
+  width: 200px;
+  padding: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ .Payer{
+   text-decoration: none;
+   color: #444444;
+ }
+
+ /*AJOUTER*/
+ .boutonPasSur a{
+    text-decoration: none;
+    color: white;
+}
+
+.boutonSur a{
+    text-decoration: none;
+    color: black;
+}
+
+.boutonAjouter{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+       vertical-align: top;
+    outline:none;
+    color: #444444;
+    background: #F3F3F3;
+    border: 1px #DADADA solid;
+
+}
+
+
+.boutonAjouter:hover {
+    border: 1px #C6C6C6 solid;
+    box-shadow: 1px 1px 1px #EAEAEA;
+    color: #333333;
+    background: #F7F7F7;
+}
+
+.boutonAjouter:active {
+    box-shadow: inset 1.5px 1.5px 1.5px black;
+}
+
+
+.boutonAjouterSynpole{
+    font-weight:lighter;
+    font-size:23px;
+    position:relative;
+    top:-6px;
+    right:8px;
+
+}
+
+/*ANNULER/SUPPRIMER*/
+.boutonPasSur {
+    background: -webkit-linear-gradient(top, #DD4B39, #D14836);
+    background: -moz-linear-gradient(top, #DD4B39, #D14836);
+    background: -ms-linear-gradient(top, #DD4B39, #D14836);
+    border: 1px solid #DD4B39;
+    color: white;
+    text-shadow: 0 1px 0 #C04131;
+}
+
+.boutonPasSur:hover {
+     background: -webkit-linear-gradient(top, #DD4B39, #C53727);
+     background: -moz-linear-gradient(top, #DD4B39, #C53727);
+     background: -ms-linear-gradient(top, #DD4B39, #C53727);
+     border: 1px solid #AF301F;
+}
+
+.boutonPasSur:active {
+     box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
+    background: -webkit-linear-gradient(top, #D74736, #AD2719);
+    background: -moz-linear-gradient(top, #D74736, #AD2719);
+    background: -ms-linear-gradient(top, #D74736, #AD2719);
+}
+
+ /*MODIFIER*/
+ .boutonChanger {
+    color: white;
+    text-decoration: none;
+    border: 1px solid #FB8F3D;
+    background: -webkit-linear-gradient(top, #FDA251, #FB8F3D);
+    background: -moz-linear-gradient(top, #FDA251, #FB8F3D);
+    background: -ms-linear-gradient(top, #FDA251, #FB8F3D);
+}
+
+.boutonChanger:hover {
+    border: 1px solid #EB5200;
+    background: -webkit-linear-gradient(top, #FD924C, #F9760B);
+    background: -moz-linear-gradient(top, #FD924C, #F9760B);
+    background: -ms-linear-gradient(top, #FD924C, #F9760B);
+    box-shadow: 0 1px #EFEFEF;
+}
+
+.boutonChanger:active {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+}
+
+ /*VALIDER*/
+ .Valider{
+    text-decoration: none;
+    color: #444444;
+ }
+
+ .boutonSur {
+    color: #444444;
+    background: #F3F3F3;
+    border: 1px #DADADA solid;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 9pt;
+    outline: none;
+}
+
+.boutonSur:hover {
+    border: 1px #C6C6C6 solid;
+    box-shadow: 1px 1px 1px #EAEAEA;
+    color: #333333;
+    background: #F7F7F7;
+}
+
+.boutonSur:active {
+    box-shadow: inset 1px 1px 1px #DFDFDF;
+}
+
+/*FLECHE POUR CONSULTER*/
+ .fleche{
+     float:right;
+     display:inline-block;
+ }
+
+ .to_top{
+     margin-bottom:30%;
+     width: 0;
+     height: 0;
+     border-bottom: 7px solid #696969;
+     border-left: 7px solid transparent;
+     border-right: 7px solid transparent;
+ }
+
+ .to_bottom{
+     width: 0;
+     height: 0;
+     border-top: 7px solid #696969;
+     border-left: 7px solid transparent;
+     border-right: 7px solid transparent;
+
+ }
+
+ .to_bottom:hover{
+     border-left: 7px solid transparent;
+     border-right: 7px solid transparent;
+ }
+
+ .to_bottom:hover{
+     border-top: 9px solid #696969;
+ }
+
+ .to_top:hover{
+     border-bottom: 9px solid #696969;
+ }
+
+ /*HORAIRES*/
+
+ /* enregistrerHoraire*/
+ .enregistrerHoraire th, .enregistrerHoraire td {
+   border: 0px;
+   border-right: 1px solid black;
+ }
+
+ .enregistrerHoraire .jour {
+   text-align: right;
+   width: 115px;
+ }
+
+ .enregistrerHoraire .limite {
+   border-top: 1px solid black;
+ }
+
+ .enregistrerHoraire table th {
+   text-align: left;
+ }
+
+ .enregistrerHoraire table {
+   width: 100%;
+   padding-top: 15px;
+   border: 1px solid black;
+ }
+
+ .enregistrerHoraire .travail {
+   background-color: red;
+   border: 1px solid black;
+ }
+
+ /*USE CASE EMPLOYE*/
+ .enregistrerEmploye table {
+   width: 100%;
+ }
+
+ .enregistrerEmploye table thead tr th p{
+   padding: 2%;
+    width: 100%;
+ }
+
+ .employe {
+   background-color: rgba(255, 212, 0, 0.42);
+   display: flex;
+   flex-direction: column;
+   border: solid black 1px;
+   margin-left: 2%;
+   width: 50%;
+ }
+
+ .employe table tbody tr td{
+   border: none;
+ }
+
+ .employe p {
+   padding: 1%;
+ }
+
+ .employe textfield {
+   padding: 1%;
+ }
+
+ .employe p a {
+   color: black;
+   text-decoration: none;
+   background-color: rgba(255, 212, 0, 0.62);
+   padding: 1%;
+ }
+
+ .choix_date {
+   width: 90%;
+   padding: 1%;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .choix_date table tbody tr td {
+   border: 1px solid white;
+ }
+
+ .enregistrerHoraire table tbody tr td {
+   border: none;
+   align: center;
+ }
+
+ .date table tbody tr td {
+   border: 1px solid rgba(255, 212, 0, 0.42);
+   align: center;
+ }
+
+
+ .date{
+   width: 40%;
+   padding: 1%;
+   display: flex;
+ }
+
+ .choix2 {
+   padding: 1%;
+   width: 40%;
+   display: flex;
+ }
+
+ h3{
+   font-size: 1.2em;
+   font-weight: bold;
+ }
+
+ .choix2 h3 {
+   margin-right: 5%;
+   justify-content: space-between;
+ }
+
+ .choix {
+   padding: 1%;
+   width: 20%;
+   display: flex;
+   border: solid black 1px;
+ }
+
+ .choix select {
+   margin-left: 3%;
+ }
+
+ .boutons {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   margin: auto;
+ }
+
+ .boutons p {
+   width: 20%;
+   text-align: center;
+   font-size: 1.1em;
+ }
+
+ .employe tr td input {
+   width: 100%;
+ }
+
+ .tab {
+   display: flex;
+ }
+
+ .employé table {
+   text-decoration: none;
+ }
+
+ .heure {
+   padding: 1%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+ }
+
+ .temps {
+   padding: 1%;
+   display: flex;
+   width: 20%;
+   justify-content: center;
+ }
+
+ .temps input {
+   margin-right: 5%;
+ }
+
+ .temps h3 {
+   margin-right: 1%;
+ }
+
+ .toutH {
+   width: 100%;
+   background-color: rgba(255, 212, 0, 0.42);
+ }
+
+
+ .enregistrerHoraire p a {
+   color: black;
+   text-decoration: none;
+   background-color: rgba(128, 128, 128, 0.2);
+   padding: 1%;
+ }
+
+/*CONNEXION*/
+.casConnexion{
+  margin: auto;
+  border: 1px solid black;
+}
+
+.Connexion{
+  width: 400px;
+}
+
+.Connexion .formConnexion{
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.Connexion label{
+  text-align: center;
+}
+
+.Connexion .Valider{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Connexion .mdpOublie{
+  color: grey;
+}
+
+/*ACHAT*/
+/*CREER COMMANDE*/
+.creerCommande .selectFournisseur{
+  margin-left: auto;
+  margin-right: auto;
+  width: 598px;
+  border: 1px solid black;
+  border-bottom: 0px;
+  padding: 5px;
+}
+
+.creerCommande table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.creerCommande .Produit{
+  width: 150px;
+}
+
+.creerCommande .Quantite{
+  width: 50px;
+}
+
+.creerCommande .Pourcentage{
+  width: 50px;
+}
+
+/*CONSULTER COMMANDE*/
+.consulterCommande table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.consulterCommande .ModifierCase{
+  border: 0px;
+  border-left: 1px solid black;
+}
+
+.consulterCommande .Recherche{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.consulterCommande .Modifier, .consulterCommande .Payer{
+  color: black;
+  text-decoration: none;
+}
+
+/*CONSULTER COMMANDE*/
+.modifierCommande table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modifierCommande .ModifierCase{
+  border: 0px;
+  border-left: 1px solid black;
+}
+
+.modifierCommande .Recherche{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.modifierCommande .Modifier, .modifierCommande .Payer{
+  color: black;
+  text-decoration: none;
+}
+
+/*RECEPTIONNER LIVRAISON*/
+.receptionnerLivraison table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.receptionnerLivraison .Quantite{
+  width: 50px;
+}
+
+.receptionnerLivraison .QuantiteAttendu{
+  text-align: center;
+}
+
+/*STOCK*/
+/*GESTION MOUVEMENT STOCK*/
+.enregistrerMouvementStock .Enlever{
+  background-color: red;
+  color: black;
+  border: solid 1px black;
+  border-radius: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+}
+
+/*CONSULTER STOCKS*/
+.consulterStock table{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.consulterStock .ModifierQuantite{
+  text-decoration: none;
+  color: black;
+}
+
+.consulterStock .ModifierQuantite:hover{
+  font-size: 18px;
+  color: #1e90ff;
+}
+
+.consulterStock .Quantite{
+  text-align: center;
+  width: 75px;
+}
+
+/*VENTE*/
+/*ENREGISTRER VENTE*/
+.enregistrerVente .Quantite, .enregistrerVente .Pourcentage{
+  width: 50px;
+}
+
+.enregistrerVente table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.enregistrerVente ul{
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+/*CONSULTER VENTE*/
+.consulterVente table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.consulterVente .inconnu{
+  color: red;
+}
+
+
+/*USE CASES ENREFISTRER ET MODIFIER PRODUIT*/
+#EnregistrerEtModifierProduit h3{
+	font-size: 1.5em;
+	text-align: center;
+	background-color: rgb(136, 255, 89);
+	padding-left:-5%;
+	margin: 2% 15%;
+}
+
+#EnregistrerEtModifierProduit table{
+	margin :auto ;
+	margin-top:0px;
+	width :70%;
+	font-weight:bold;
+}
+
+#EnregistrerEtModifierProduit table, #EnregistrerEtModifierProduit h3{
+	margin-bottom:0px;
+	border-radius: 4px;
+    border-collapse: collapse;
+    border-style:hidden  ;
+    box-shadow: 0 0 0 1px black;
+}
+
+#EnregistrerEtModifierProduit table th, #EnregistrerEtModifierProduit table td{
+	background-color: rgb(136, 255, 89, 0.3);
+	text-align: left;
+	border:0px;
+}
+
+#EnregistrerEtModifierProduit #informationPrincipale button{
+	margin:0 5%;
+
+}
+
+#EnregistrerEtModifierProduit .label1, #EnregistrerEtModifierProduit .label2{
+	padding: 0% 1%;
+	padding-bottom:0;
+	width:15%;
+}
+
+#EnregistrerEtModifierProduit .label2{
+	width:22%;
+}
+
+#EnregistrerEtModifierProduit .Ligne1{
+	vertical-align:middle;
+	text-align:left;
+	padding-left:0;
+}
+#EnregistrerEtModifierProduit .ligne1{
+	width:25%;
+	padding-left:10%;
+	text-align:right;
+}
+#EnregistrerEtModifierProduit .prix{
+	width:15%;
+}
+
+#EnregistrerEtModifierProduit .labelLibelle{
+	padding-top:10%;
+	padding-bottom:10%;
+}
+#EnregistrerEtModifierProduit .InterligneInput{
+	padding-top:3%;
+	padding-bottom:3%;
+}
+
+#EnregistrerEtModifierProduit .Input{
+	background-color:#fffaf0;
+	border-radius: 5px;
+}
+
+#EnregistrerEtModifierProduit .Ligne2{
+	padding-bottom:1%;
+}
+
+#EnregistrerEtModifierProduit .ligne3{
+	text-align:right;
+	padding-top:3%;
+}
+
+#EnregistrerEtModifierProduit .Ligne3{
+	padding-left:3%;
+	padding-bottom:1%;
+}
+
+#EnregistrerEtModifierProduit .inputDetail {
+	text-align:center;
+}
+
+#EnregistrerEtModifierProduit aside{
+	margin: 2% 15%;
+	text-align: center;
+}
+
+#EnregistrerEtModifierProduit aside button{
+	margin:0 10%;
+}
+
+#EnregistrerEtModifierProduit .boutonPasSur a, #ChercherProduit .boutonPasSur a{
+	text-decoration: none;
+	color: white;
+}
+
+#EnregistrerEtModifierProduit .boutonSur a{
+	text-decoration: none;
+	color: black;
+}
+
+/*USE CASES CHERCHER ET SUPPRIMER PRODUIT*/
+#ChercherProduit h2, #EnregistrerEtModifierProduit h2{
+	padding-left:-5%;
+	margin:20px 0 20px 20px;
+}
+
+#ChercherProduit table{
+	margin-left:2%;
+	margin-top:0px;
+	width :98%;
+	}
+
+#ChercherProduit #chercherProduitTable1{
+	border-radius: 4px;
+    border-collapse: collapse;
+    border-style:hidden  ;
+    box-shadow: 0 0 0 1px #d8d8d8;
+	margin-bottom:4.5%;
+}
+
+#ChercherProduit table th, #ChercherProduit table td{
+	background-color: white;
+	text-align: left;
+	border:0px;
+}
+
+#ChercherProduit .ligne1,  #ChercherProduit .ligne5{
+	background-color: rgb(136, 255, 89);
+}
+
+#ChercherProduit .ligne1, #ChercherProduit .ligne2, #ChercherProduit .ligne3, #ChercherProduit .ligne4, #ChercherProduit .ligne5 {
+	font-weight:bold;
+}
+
+
+
+#ChercherProduit .informationGeneral, #ChercherProduit .input{
+	background-color:#fffaf0;
+	border-radius: 5px;
+	width:100%;
+}
+
+#ChercherProdui .designation{
+	width:5%;
+}
+
+#ChercherProduit .prixInput{
+	width:60%
+}
+
+#ChercherProduit .button{
+	vertical-align: middle;
+}
+ #ChercherProduit .buttonEnregistrer{
+	text-align:center;
+}
+
+#ChercherProduit .prixPosition{
+	width:7%
+}
+
+#ChercherProduit #chercherProduitTable2{
+	border:0;
+
+}
+
+#chercherProduitTable2 .ElementImpaire{background:rgb(136, 255, 89, 0.5);}
+
+
+#ChercherProduit #NbrProduits{
+	text-align:center;
+	color:red;
+}
+
+#ChercherProduit #libelleNbrProduit{
+	text-align:right;
+}
+
+#ChercherProduit .Designation{
+	width:15%;
+}
+
+#ChercherProduit .prix{
+	width:7%;
+}
+#ChercherProduit .fournisseur{
+	width:14%;
+}
+
+#ChercherProduit .fleche{
+	float:right;
+	display:inline-block;
+}
+
+#ChercherProduit .to_top {
+	margin-bottom:30%;
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid #696969;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+#ChercherProduit .to_bottom{
+
+	width: 0;
+    height: 0;
+    border-top: 7px solid #696969;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+
+}
+
+#ChercherProduit .to_bottom:hover, .to_top:hover{
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+#ChercherProduit .to_bottom:hover{
+	border-top: 9px solid #696969;
+}
+
+#ChercherProduit .to_top:hover{
+    border-bottom: 9px solid #696969;
+}
+
+#ChercherProduit .ligne5{
+	font-size:1em;
+}
+
+#ChercherProduit .ligne5, #ChercherProduit .ligneProduit{
+	border:solid 1px black;
+	text-align:center;
+	vertical-align: middle;
+}
+#ChercherProduit .ligneProduit{
+	border-left:solid 1px #d8d8d8;
+	border-right:solid 1px #d8d8d8;
+}
+
+#ChercherProduit .img{
+	width:30%;
+}
+
+#ChercherProduit img{
+	width:30%;
+	border-radius: 6px;
+}
+
+#ChercherProduit .boutonModifierElementaire{
+	vertical-align: middle;
+}
+
+
+.boutonSur {
+    color: #444444;
+    background: #F3F3F3;
+    border: 1px #DADADA solid;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 9pt;
+    outline: none;
+}
+
+.boutonSur:hover {
+    border: 1px #C6C6C6 solid;
+    box-shadow: 1px 1px 1px #EAEAEA;
+    color: #333333;
+    background: #F7F7F7;
+}
+
+.boutonSur:active {
+    box-shadow: inset 1px 1px 1px #DFDFDF;
+}
+
+.boutonChanger {
+    color: white;
+    border: 1px solid #FB8F3D;
+    background: -webkit-linear-gradient(top, #FDA251, #FB8F3D);
+    background: -moz-linear-gradient(top, #FDA251, #FB8F3D);
+    background: -ms-linear-gradient(top, #FDA251, #FB8F3D);
+}
+
+.boutonChanger:hover {
+    border: 1px solid #EB5200;
+    background: -webkit-linear-gradient(top, #FD924C, #F9760B);
+    background: -moz-linear-gradient(top, #FD924C, #F9760B);
+    background: -ms-linear-gradient(top, #FD924C, #F9760B);
+    box-shadow: 0 1px #EFEFEF;
+}
+
+.boutonChanger:active {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+}
+
+.boutonPasSur {
+    background: -webkit-linear-gradient(top, #DD4B39, #D14836);
+    background: -moz-linear-gradient(top, #DD4B39, #D14836);
+    background: -ms-linear-gradient(top, #DD4B39, #D14836);
+    border: 1px solid #DD4B39;
+    color: white;
+    text-shadow: 0 1px 0 #C04131;
+}
+
+.boutonPasSur:hover {
+     background: -webkit-linear-gradient(top, #DD4B39, #C53727);
+     background: -moz-linear-gradient(top, #DD4B39, #C53727);
+     background: -ms-linear-gradient(top, #DD4B39, #C53727);
+     border: 1px solid #AF301F;
+}
+
+.boutonPasSur:active {
+     box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
+    background: -webkit-linear-gradient(top, #D74736, #AD2719);
+    background: -moz-linear-gradient(top, #D74736, #AD2719);
+    background: -ms-linear-gradient(top, #D74736, #AD2719);
+}
+
+
+/*SUPPRIMER PRODUIT*/
+#ChercherProduit aside{
+	margin: 2% 15%;
+	text-align: center;
+}
+
+#ChercherProduit aside button{
+	margin:0 10%;
+}
+
+#ChercherProduit .ligneProduitCocher{
+	text-align:center;
+	vertical-align: middle;
+	border-bottom:solid 1px black;
+	border-left:solid 1px #d8d8d8;
+}
+
+
+#ChercherProduit .ligneProduitElement2{
+	border-left:0;
+	text-align:left;
+}
+
+
+/*USE CASES ENREFISTRER ET MODIFIER PRODUIT*/
+#EnregistrerEtModifierProduit h3{
+	font-size: 1.5em;
+	text-align: center;
+	background-color: rgb(136, 255, 89);
+	padding-left:-5%;
+	margin: 2% 15%;
+}
+
+#EnregistrerEtModifierProduit table{
+	margin :auto ;
+	margin-top:0px;
+	width :70%;
+	font-weight:bold;
+}
+
+#EnregistrerEtModifierProduit table, #EnregistrerEtModifierProduit h3{
+	margin-bottom:0px;
+	border-radius: 4px;
+    border-collapse: collapse;
+    border-style:hidden  ;
+    box-shadow: 0 0 0 1px black;
+}
+
+#EnregistrerEtModifierProduit table th, #EnregistrerEtModifierProduit table td{
+	background-color: rgb(136, 255, 89, 0.3);
+	text-align: left;
+	border:0px;
+}
+
+#EnregistrerEtModifierProduit #informationPrincipale button{
+	margin:0 5%;
+
+}
+
+#EnregistrerEtModifierProduit .label1, #EnregistrerEtModifierProduit .label2{
+	padding: 0% 1%;
+	padding-bottom:0;
+	width:15%;
+}
+
+#EnregistrerEtModifierProduit .label2{
+	width:22%;
+}
+
+#EnregistrerEtModifierProduit .Ligne1{
+	vertical-align:middle;
+	text-align:left;
+	padding-left:0;
+}
+#EnregistrerEtModifierProduit .ligne1{
+	width:25%;
+	padding-left:10%;
+	text-align:right;
+}
+#EnregistrerEtModifierProduit .prix{
+	width:15%;
+}
+
+#EnregistrerEtModifierProduit .labelLibelle{
+	padding-top:10%;
+	padding-bottom:10%;
+}
+#EnregistrerEtModifierProduit .InterligneInput{
+	padding-top:3%;
+	padding-bottom:3%;
+}
+
+#EnregistrerEtModifierProduit .Input{
+	background-color:#fffaf0;
+	border-radius: 5px;
+}
+
+#EnregistrerEtModifierProduit .Ligne2{
+	padding-bottom:1%;
+}
+
+#EnregistrerEtModifierProduit .ligne3{
+	text-align:right;
+	padding-top:3%;
+}
+
+#EnregistrerEtModifierProduit .Ligne3{
+	padding-left:3%;
+	padding-bottom:1%;
+}
+
+#EnregistrerEtModifierProduit .inputDetail {
+	text-align:center;
+}
+
+#EnregistrerEtModifierProduit aside{
+	margin: 2% 15%;
+	text-align: center;
+}
+
+#EnregistrerEtModifierProduit aside button{
+	margin:0 10%;
+}
+
+#EnregistrerEtModifierProduit .boutonPasSur a, #ChercherProduit .boutonPasSur a{
+	text-decoration: none;
+	color: white;
+}
+
+#EnregistrerEtModifierProduit .boutonSur a{
+	text-decoration: none;
+	color: black;
+}
+
+/*USE CASES CHERCHER ET SUPPRIMER PRODUIT*/
+#ChercherProduit h2, #EnregistrerEtModifierProduit h2{
+	padding-left:-5%;
+	margin:20px 0 20px 20px;
+}
+
+#ChercherProduit table{
+	margin-left:2%;
+	margin-top:0px;
+	width :98%;
+	}
+
+#ChercherProduit #chercherProduitTable1{
+	border-radius: 4px;
+    border-collapse: collapse;
+    border-style:hidden  ;
+    box-shadow: 0 0 0 1px #d8d8d8;
+	margin-bottom:4.5%;
+}
+
+#ChercherProduit table th, #ChercherProduit table td{
+	background-color: white;
+	text-align: left;
+	border:0px;
+}
+
+#ChercherProduit .ligne1,  #ChercherProduit .ligne5{
+	background-color: rgb(136, 255, 89);
+}
+
+#ChercherProduit .ligne1, #ChercherProduit .ligne2, #ChercherProduit .ligne3, #ChercherProduit .ligne4, #ChercherProduit .ligne5 {
+	font-weight:bold;
+}
+
+
+
+#ChercherProduit .informationGeneral, #ChercherProduit .input{
+	background-color:#fffaf0;
+	border-radius: 5px;
+	width:100%;
+}
+
+#ChercherProdui .designation{
+	width:5%;
+}
+
+#ChercherProduit .prixInput{
+	width:60%
+}
+
+#ChercherProduit .button{
+	vertical-align: middle;
+}
+ #ChercherProduit .buttonEnregistrer{
+	text-align:center;
+}
+
+#ChercherProduit .prixPosition{
+	width:7%
+}
+
+#ChercherProduit #chercherProduitTable2{
+	border:0;
+
+}
+
+#chercherProduitTable2 .ElementImpaire{background:rgb(136, 255, 89, 0.5);}
+
+
+#ChercherProduit #NbrProduits{
+	text-align:center;
+	color:red;
+}
+
+#ChercherProduit #libelleNbrProduit{
+	text-align:right;
+}
+
+#ChercherProduit .Designation{
+	width:15%;
+}
+
+#ChercherProduit .prix{
+	width:7%;
+}
+#ChercherProduit .fournisseur{
+	width:14%;
+}
+
+#ChercherProduit .fleche{
+	float:right;
+	display:inline-block;
+}
+
+#ChercherProduit .to_top {
+	margin-bottom:30%;
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid #696969;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+#ChercherProduit .to_bottom{
+
+	width: 0;
+    height: 0;
+    border-top: 7px solid #696969;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+
+}
+
+#ChercherProduit .to_bottom:hover, .to_top:hover{
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+#ChercherProduit .to_bottom:hover{
+	border-top: 9px solid #696969;
+}
+
+#ChercherProduit .to_top:hover{
+    border-bottom: 9px solid #696969;
+}
+
+#ChercherProduit .ligne5{
+	font-size:1em;
+}
+
+#ChercherProduit .ligne5, #ChercherProduit .ligneProduit{
+	border:solid 1px black;
+	text-align:center;
+	vertical-align: middle;
+}
+#ChercherProduit .ligneProduit{
+	border-left:solid 1px #d8d8d8;
+	border-right:solid 1px #d8d8d8;
+}
+
+#ChercherProduit .img{
+	width:30%;
+}
+
+#ChercherProduit img{
+	width:30%;
+	border-radius: 6px;
+}
+
+#ChercherProduit .boutonModifierElementaire{
+	vertical-align: middle;
+}
+
+
+.boutonSur {
+    color: #444444;
+    background: #F3F3F3;
+    border: 1px #DADADA solid;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 9pt;
+    outline: none;
+}
+
+.boutonSur:hover {
+    border: 1px #C6C6C6 solid;
+    box-shadow: 1px 1px 1px #EAEAEA;
+    color: #333333;
+    background: #F7F7F7;
+}
+
+.boutonSur:active {
+    box-shadow: inset 1px 1px 1px #DFDFDF;
+}
+
+.boutonChanger {
+    color: white;
+    border: 1px solid #FB8F3D;
+    background: -webkit-linear-gradient(top, #FDA251, #FB8F3D);
+    background: -moz-linear-gradient(top, #FDA251, #FB8F3D);
+    background: -ms-linear-gradient(top, #FDA251, #FB8F3D);
+}
+
+.boutonChanger:hover {
+    border: 1px solid #EB5200;
+    background: -webkit-linear-gradient(top, #FD924C, #F9760B);
+    background: -moz-linear-gradient(top, #FD924C, #F9760B);
+    background: -ms-linear-gradient(top, #FD924C, #F9760B);
+    box-shadow: 0 1px #EFEFEF;
+}
+
+.boutonChanger:active {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+}
+
+.boutonPasSur {
+    background: -webkit-linear-gradient(top, #DD4B39, #D14836);
+    background: -moz-linear-gradient(top, #DD4B39, #D14836);
+    background: -ms-linear-gradient(top, #DD4B39, #D14836);
+    border: 1px solid #DD4B39;
+    color: white;
+    text-shadow: 0 1px 0 #C04131;
+}
+
+.boutonPasSur:hover {
+     background: -webkit-linear-gradient(top, #DD4B39, #C53727);
+     background: -moz-linear-gradient(top, #DD4B39, #C53727);
+     background: -ms-linear-gradient(top, #DD4B39, #C53727);
+     border: 1px solid #AF301F;
+}
+
+.boutonPasSur:active {
+     box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
+    background: -webkit-linear-gradient(top, #D74736, #AD2719);
+    background: -moz-linear-gradient(top, #D74736, #AD2719);
+    background: -ms-linear-gradient(top, #D74736, #AD2719);
+}
+
+
+/*SUPPRIMER PRODUIT*/
+#ChercherProduit aside{
+	margin: 2% 15%;
+	text-align: center;
+}
+
+#ChercherProduit aside button{
+	margin:0 10%;
+}
+
+#ChercherProduit .ligneProduitCocher{
+	text-align:center;
+	vertical-align: middle;
+	border-bottom:solid 1px black;
+	border-left:solid 1px #d8d8d8;
+}
+
+
+#ChercherProduit .ligneProduitElement2{
+	border-left:0;
+	text-align:left;
+}
+
+
+/*USE CASES ENREFISTRER ET MODIFIER PRODUIT*/
+#EnregistrerEtModifierProduit h3{
+	font-size: 1.5em;
+	text-align: center;
+	background-color: rgb(136, 255, 89);
+	padding-left:-5%;
+	margin: 2% 15%;
+}
+
+#EnregistrerEtModifierProduit table{
+	margin :auto ;
+	margin-top:0px;
+	width :70%;
+	font-weight:bold;
+}
+
+#EnregistrerEtModifierProduit table, #EnregistrerEtModifierProduit h3{
+	margin-bottom:0px;
+	border-radius: 4px;
+    border-collapse: collapse;
+    border-style:hidden  ;
+    box-shadow: 0 0 0 1px black;
+}
+
+#EnregistrerEtModifierProduit table th, #EnregistrerEtModifierProduit table td{
+	background-color: rgb(136, 255, 89, 0.3);
+	text-align: left;
+	border:0px;
+}
+
+#EnregistrerEtModifierProduit #informationPrincipale button{
+	margin:0 5%;
+
+}
+
+#EnregistrerEtModifierProduit .label1, #EnregistrerEtModifierProduit .label2{
+	padding: 0% 1%;
+	padding-bottom:0;
+	width:15%;
+}
+
+#EnregistrerEtModifierProduit .label2{
+	width:22%;
+}
+
+#EnregistrerEtModifierProduit .Ligne1{
+	vertical-align:middle;
+	text-align:left;
+	padding-left:0;
+}
+#EnregistrerEtModifierProduit .ligne1{
+	width:25%;
+	padding-left:10%;
+	text-align:right;
+}
+#EnregistrerEtModifierProduit .prix{
+	width:15%;
+}
+
+#EnregistrerEtModifierProduit .labelLibelle{
+	padding-top:10%;
+	padding-bottom:10%;
+}
+#EnregistrerEtModifierProduit .InterligneInput{
+	padding-top:3%;
+	padding-bottom:3%;
+}
+
+#EnregistrerEtModifierProduit .Input{
+	background-color:#fffaf0;
+	border-radius: 5px;
+}
+
+#EnregistrerEtModifierProduit .Ligne2{
+	padding-bottom:1%;
+}
+
+#EnregistrerEtModifierProduit .ligne3{
+	text-align:right;
+	padding-top:3%;
+}
+
+#EnregistrerEtModifierProduit .Ligne3{
+	padding-left:3%;
+	padding-bottom:1%;
+}
+
+#EnregistrerEtModifierProduit .inputDetail {
+	text-align:center;
+}
+
+#EnregistrerEtModifierProduit aside{
+	margin: 2% 15%;
+	text-align: center;
+}
+
+#EnregistrerEtModifierProduit aside button{
+	margin:0 10%;
+}
+
+#EnregistrerEtModifierProduit .boutonPasSur a, #ChercherProduit .boutonPasSur a{
+	text-decoration: none;
+	color: white;
+}
+
+#EnregistrerEtModifierProduit .boutonSur a{
+	text-decoration: none;
+	color: black;
+}
+
+/*USE CASES CHERCHER ET SUPPRIMER PRODUIT*/
+#ChercherProduit h2, #EnregistrerEtModifierProduit h2{
+	padding-left:-5%;
+	margin:20px 0 20px 20px;
+}
+
+#ChercherProduit table{
+	margin-left:2%;
+	margin-top:0px;
+	width :98%;
+	}
+
+#ChercherProduit #chercherProduitTable1{
+	border-radius: 4px;
+    border-collapse: collapse;
+    border-style:hidden  ;
+    box-shadow: 0 0 0 1px #d8d8d8;
+	margin-bottom:4.5%;
+}
+
+#ChercherProduit table th, #ChercherProduit table td{
+	background-color: white;
+	text-align: left;
+	border:0px;
+}
+
+#ChercherProduit .ligne1,  #ChercherProduit .ligne5{
+	background-color: rgb(136, 255, 89);
+}
+
+#ChercherProduit .ligne1, #ChercherProduit .ligne2, #ChercherProduit .ligne3, #ChercherProduit .ligne4, #ChercherProduit .ligne5 {
+	font-weight:bold;
+}
+
+
+
+#ChercherProduit .informationGeneral, #ChercherProduit .input{
+	background-color:#fffaf0;
+	border-radius: 5px;
+	width:100%;
+}
+
+#ChercherProdui .designation{
+	width:5%;
+}
+
+#ChercherProduit .prixInput{
+	width:60%
+}
+
+#ChercherProduit .button{
+	vertical-align: middle;
+}
+ #ChercherProduit .buttonEnregistrer{
+	text-align:center;
+}
+
+#ChercherProduit .prixPosition{
+	width:7%
+}
+
+#ChercherProduit #chercherProduitTable2{
+	border:0;
+
+}
+
+#chercherProduitTable2 .ElementImpaire{background:rgb(136, 255, 89, 0.5);}
+
+
+#ChercherProduit #NbrProduits{
+	text-align:center;
+	color:red;
+}
+
+#ChercherProduit #libelleNbrProduit{
+	text-align:right;
+}
+
+#ChercherProduit .Designation{
+	width:15%;
+}
+
+#ChercherProduit .prix{
+	width:7%;
+}
+#ChercherProduit .fournisseur{
+	width:14%;
+}
+
+#ChercherProduit .fleche{
+	float:right;
+	display:inline-block;
+}
+
+#ChercherProduit .to_top {
+	margin-bottom:30%;
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid #696969;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+#ChercherProduit .to_bottom{
+
+	width: 0;
+    height: 0;
+    border-top: 7px solid #696969;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+
+}
+
+#ChercherProduit .to_bottom:hover, .to_top:hover{
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+#ChercherProduit .to_bottom:hover{
+	border-top: 9px solid #696969;
+}
+
+#ChercherProduit .to_top:hover{
+    border-bottom: 9px solid #696969;
+}
+
+#ChercherProduit .ligne5{
+	font-size:1em;
+}
+
+#ChercherProduit .ligne5, #ChercherProduit .ligneProduit{
+	border:solid 1px black;
+	text-align:center;
+	vertical-align: middle;
+}
+#ChercherProduit .ligneProduit{
+	border-left:solid 1px #d8d8d8;
+	border-right:solid 1px #d8d8d8;
+}
+
+#ChercherProduit .img{
+	width:30%;
+}
+
+#ChercherProduit img{
+	width:30%;
+	border-radius: 6px;
+}
+
+#ChercherProduit .boutonModifierElementaire{
+	vertical-align: middle;
+}
+
+
+.boutonSur {
+    color: #444444;
+    background: #F3F3F3;
+    border: 1px #DADADA solid;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 9pt;
+    outline: none;
+}
+
+.boutonSur:hover {
+    border: 1px #C6C6C6 solid;
+    box-shadow: 1px 1px 1px #EAEAEA;
+    color: #333333;
+    background: #F7F7F7;
+}
+
+.boutonSur:active {
+    box-shadow: inset 1px 1px 1px #DFDFDF;
+}
+
+.boutonChanger {
+    color: white;
+    border: 1px solid #FB8F3D;
+    background: -webkit-linear-gradient(top, #FDA251, #FB8F3D);
+    background: -moz-linear-gradient(top, #FDA251, #FB8F3D);
+    background: -ms-linear-gradient(top, #FDA251, #FB8F3D);
+}
+
+.boutonChanger:hover {
+    border: 1px solid #EB5200;
+    background: -webkit-linear-gradient(top, #FD924C, #F9760B);
+    background: -moz-linear-gradient(top, #FD924C, #F9760B);
+    background: -ms-linear-gradient(top, #FD924C, #F9760B);
+    box-shadow: 0 1px #EFEFEF;
+}
+
+.boutonChanger:active {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+}
+
+.boutonPasSur {
+    background: -webkit-linear-gradient(top, #DD4B39, #D14836);
+    background: -moz-linear-gradient(top, #DD4B39, #D14836);
+    background: -ms-linear-gradient(top, #DD4B39, #D14836);
+    border: 1px solid #DD4B39;
+    color: white;
+    text-shadow: 0 1px 0 #C04131;
+}
+
+.boutonPasSur:hover {
+     background: -webkit-linear-gradient(top, #DD4B39, #C53727);
+     background: -moz-linear-gradient(top, #DD4B39, #C53727);
+     background: -ms-linear-gradient(top, #DD4B39, #C53727);
+     border: 1px solid #AF301F;
+}
+
+.boutonPasSur:active {
+     box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
+    background: -webkit-linear-gradient(top, #D74736, #AD2719);
+    background: -moz-linear-gradient(top, #D74736, #AD2719);
+    background: -ms-linear-gradient(top, #D74736, #AD2719);
+}
+
+
+/*SUPPRIMER PRODUIT*/
+#ChercherProduit aside{
+	margin: 2% 15%;
+	text-align: center;
+}
+
+#ChercherProduit aside button{
+	margin:0 10%;
+}
+
+#ChercherProduit .ligneProduitCocher{
+	text-align:center;
+	vertical-align: middle;
+	border-bottom:solid 1px black;
+	border-left:solid 1px #d8d8d8;
+}
+
+
+#ChercherProduit .ligneProduitElement2{
+	border-left:0;
+	text-align:left;
+}
+
+/*FOURNISSEUR*/
+.fournisseur .millieu{
+  text-align: center;
+  padding-top: 2px;
+}
+.fournisseur table{
+  margin: auto;
+}
+.fournisseur .choix{
+  text-align: center;
+  padding-top: 5px;
+}
+.fournisseur a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.fournisseur a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.fournisseur .previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.fournisseur .next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.fournisseur .round {
+  border-radius: 50%;
+}
+.fournisseur .Demande {
+  background-color: #4CAF50;
+  color: white;
+}
+.fournisseur .espace{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.fournisseur .base{
+  width: 60%;
+  margin-left: 20%;
+  border: black solid 1px;
+  border-radius: 5px;
+  margin-top: 10%;
+}
+.fournisseur .base table tr td {
+  border: 1px solid black;
+  padding: 5px 5px 5px 5px;
+}
+.fournisseur .casUtilisation{
+  padding: 20px;
+  padding-right: 0px;
+}
+.fournisseur .titre{
+  margin-left:1.5%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 2px;
+  margin-top: 1%;
+}
+.fournisseur .esg{
+  padding-left: 5px;
+}
+
+/*USE CASES ENREFISTRER ET MODIFIER PRODUIT*/
+#EnregistrerEtModifierProduit h3{
+	font-size: 1.5em;
+	text-align: center;
+	background-color: rgb(136, 255, 89);
+	padding-left:-5%;
+	margin: 2% 15%;
+}
+
+#EnregistrerEtModifierProduit table{
+	margin :auto ;
+	margin-top:0px;
+	width :70%;
+	font-weight:bold;
+}
+
+#EnregistrerEtModifierProduit table, #EnregistrerEtModifierProduit h3{
+	margin-bottom:0px;
+	border-radius: 4px;
+    border-collapse: collapse;
+    border-style:hidden  ;
+    box-shadow: 0 0 0 1px black;
+}
+
+#EnregistrerEtModifierProduit table th, #EnregistrerEtModifierProduit table td{
+	background-color: rgb(136, 255, 89, 0.3);
+	text-align: left;
+	border:0px;
+}
+
+#EnregistrerEtModifierProduit .informationPrincipale button{
+	margin:0 5%;
+}
+
+
+#EnregistrerEtModifierProduit .label1, #EnregistrerEtModifierProduit .label2{
+	padding: 0% 1%;
+	padding-bottom:0;
+	width:17%;
+}
+
+#EnregistrerEtModifierProduit .label2{
+	width:37%;
+}
+
+#EnregistrerEtModifierProduit .Reference{
+	width:50%;
+}
+
+#EnregistrerEtModifierProduit .Ligne1,#EnregistrerEtModifierProduit .Ligne3 {
+	vertical-align:middle;
+	padding-left:8%;
+}
+
+#EnregistrerEtModifierProduit .img{
+	padding-left:0;
+}
+
+#EnregistrerEtModifierProduit .InterligneInput .Taux{
+	width:20%;
+}
+
+#EnregistrerEtModifierProduit .ligne1,#EnregistrerEtModifierProduit .ligne2{
+	width:25%;
+	padding-left:8%;
+	text-align:left;
+}
+
+
+#EnregistrerEtModifierProduit .prix, #EnregistrerEtModifierProduit .Garantie{
+	width:20%;
+}
+
+#EnregistrerEtModifierProduit .labelLibelle{
+	padding-top:10%;
+	padding-bottom:10%;
+}
+#EnregistrerEtModifierProduit .InterligneInput{
+	padding-top:6%;
+	padding-bottom:6%;
+}
+
+#EnregistrerEtModifierProduit .Ligne2{
+	padding-bottom:1%;
+}
+
+
+
+#EnregistrerEtModifierProduit .Input, #ChercherProduit .Input{
+	border-radius: 5px;
+}
+
+#EnregistrerEtModifierProduit input[type=file] {
+	display: none;
+}
+
+#EnregistrerEtModifierProduit .inputDetail {
+	text-align:center;
+}
+
+#EnregistrerEtModifierProduit aside{
+	margin: 2% 15%;
+	text-align: center;
+}
+
+#EnregistrerEtModifierProduit aside button{
+	margin:0 10%;
+}
+
+#EnregistrerEtModifierProduit .case_table2{
+	margin-top:5%;
+}
+
+
+#EnregistrerEtModifierProduit .TitreAjouterPromotion{
+	width:90%;
+	margin:auto;
+	margin-top:2%;
+}
+#EnregistrerEtModifierProduit .table3{
+	width:90%;
+}
+
+
+
+#EnregistrerEtModifierProduit .ligne1_table3, #EnregistrerEtModifierProduit .ligne2_table3{
+	text-align:center;
+	border-bottom:1px solid black;
+}
+
+#EnregistrerEtModifierProduit .ligne1_table3:first-child{
+	width:2%;
+}
+
+#EnregistrerEtModifierProduit .ligne1_table3:nth-child(2){
+	width:20%;
+}
+
+#EnregistrerEtModifierProduit .ligne1_table3:nth-child(3){
+	width:5%;
+}
+
+#EnregistrerEtModifierProduit .Désignation{
+	width:80%;
+}
+
+#EnregistrerEtModifierProduit .ligne1_table3:last-child{
+	width:18%;
+}
+
+#EnregistrerEtModifierProduit .ligne2_table3{
+	border-left:1px solid #a9a9a9;
+	border-bottom:1px solid #a9a9a9;
+}
+
+#EnregistrerEtModifierProduit .ligne2_table3:nth-child(2){
+	border-left:0px;
+}
+
+#EnregistrerEtModifierProduit .Taux{
+	width:50%;
+}
+
+#EnregistrerEtModifierProduit .date{
+	width:28%;
+}
+
+#EnregistrerEtModifierProduit .infoCréation{
+	margin:0;
+	font-weight:bold;
+	font-size:0.9em;
+
+}
+
+#EnregistrerEtModifierProduit .infoCréation a{
+	margin:0 10%;
+	border-bottom:1px solid black;
+}
+
+
+.boutonPasSur a{
+	text-decoration: none;
+	color: white;
+}
+
+.boutonSur a{
+	text-decoration: none;
+	color: black;
+}
+
+.boutonAjouterSupprimer{
+	border-radius: 50%;
+	height: 20px;
+	width: 20px;
+   	vertical-align: top;
+	outline:none;
+    color: #444444;
+    background: #F3F3F3;
+    border: 1px #DADADA solid;
+}
+
+.boutonSupprimer{
+	height: 23px;
+}
+
+
+.boutonAjouterSupprimer:hover {
+    border: 1px #C6C6C6 solid;
+    box-shadow: 1px 1px 1px #EAEAEA;
+    color: #333333;
+    background: #F7F7F7;
+}
+
+.boutonAjouterSupprimer:active {
+    box-shadow: inset 1.5px 1.5px 1.5px black;
+}
+
+
+.boutonAjouterSupprimerSynpole{
+	font-weight:lighter;
+	font-size:23px;
+	position:relative;
+	top:-6px;
+	right:8px;
+	text-decoration: none;
+}
+
+.boutonSupprimerSynpole{
+	font-size:28px;
+}
+
+a.boutonAjouterSupprimerSynpole:link {
+	    color: black;
+}
+
+a.boutonAjouterSupprimerSynpole:visited {
+	    color: black;
+}
+
+a.boutonAjouterSupprimerSynpole:hover {
+	    color: blue;
+}
+
+a.boutonAjouterSupprimerSynpole:active {
+	    color: orange;
+}
+
+.AjouterUnePhoto{
+	font-size:80%;
+	width: 45%;
+	font-family :sans-serif;
+	padding:1.5%;
+	font-weight:normal;
+	text-align:center;
+	margin-left:5%;
+}
+
+/*USE CASES CHERCHER ET SUPPRIMER PRODUIT*/
+
+
+#ChercherProduit div.search {
+	padding-bottom: 1%
+}
+
+#ChercherProduit form {
+	position: relative;
+	width: 500px;
+	margin-left: 2%;
+}
+
+#ChercherProduit .search input, #ChercherProduit .search button {
+	border: none;
+	outline: none;
+}
+
+#ChercherProduit .search input {
+	width: 100%;
+	height: 42px;
+	padding-left: 13px;
+	padding-right:46px;
+}
+
+#ChercherProduit .search button {
+	height: 42px;
+	width: 42px;
+	cursor: pointer;
+	position: absolute;
+}
+
+#ChercherProduit .bar1 input {
+    background: #fafafa;
+}
+
+.bar1 button {
+    top: 0;
+    right: 0;
+    background: #7BA7AB;
+    border-radius: 0 5px 5px 0;
+}
+.bar1 button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
+}
+
+#ChercherProduit input.style1{
+    color: #666;
+    outline: none;
+    overflow:hidden;
+    border-radius: 5px;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    -moz-box-shadow: inset 1px 1px 10px rgba(0,0,0,0.1);
+    -webkit-box-shadow: inset 1px 1px 10px rgba(0,0,0,0.1);
+    box-shadow: inset 1px 1px 10px rgba(0,0,0,0.1);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+	box-sizing: border-box;
+}
+
+
+
+.l-btn{
+	margin-left:3%;
+    width: 20%;
+    height: 1.875rem;
+}
+
+.l-btn #l-btn-b{
+	width:10%;
+	border-radius:5px;
+}
+
+.l-btn #l-btn-a{
+	font-size:0.9em;
+}
+
+.l-btn>a:first-child,.l-btn>a:first-child+a{
+	padding:0;
+    width: 75%;
+    height: 1.875rem;
+    line-height: 1.875rem;
+	text-align: center;
+	vertical-align:middle;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.l-btn>a:first-child+a+*{
+	position: absolute;
+	width: 75%;
+	display: none;
+}
+
+.l-btn>a:first-child{
+	display: block;
+}
+.l-btn>a:first-child+a{
+	display: none;
+}
+.l-btn>a:first-child:target{
+	display: none;
+}
+.l-btn>a:first-child:target+a{
+	display: block;
+ }
+.l-btn>a:first-child:target+a+*{
+	display: block;
+	margin-top:-2%;
+	margin-left:1.25%;
+}
+
+#ChercherProduit aside.promotion{
+	width:30%;
+	float:right;
+	position:relative;
+	top:-85px;
+	background-color:rgba(136, 255, 89, 0.5);
+	border-radius:5px;
+	padding:0.25%;
+}
+
+#ChercherProduit aside input.date{
+	width:40%;
+}
+
+#ChercherProduit aside p{
+	margin:1%;
+}
+
+#ChercherProduit aside p{
+	font-weight:bold;
+}
+
+
+#ChercherProduit h2, #EnregistrerEtModifierProduit h2, #NbrVenteAchat h2, #NbrEmploy h2{
+	padding-left:-5%;
+	margin:20px 0 20px 20px;
+}
+
+#ChercherProduit table{
+	margin-left:2%;
+	margin-top:0px;
+	width :98%;
+}
+
+
+#ChercherProduit #chercherProduitTable1{
+	border-radius: 4px;
+    border-collapse: collapse;
+    border-style:hidden  ;
+    box-shadow: 0 0 0 1px #d8d8d8;
+	margin-bottom:4.5%;
+
+}
+
+#chercherProduitTable2 tbody{
+        display: block;
+        height: 400px;
+        overflow-y: scroll;
+}
+
+#chercherProduitTable2 thead {
+        width: calc( 100% - 1em);
+}
+
+#ChercherProduit .ligne2_table1, #ChercherProduit .lign3_table1{
+	background-color:rgba(136, 255, 89, 0.5);
+}
+
+#ChercherProduit .TVAPosition{
+	width:5%;
+	text-align:center;
+}
+
+#ChercherProduit .Input{
+	width:90%;
+}
+
+#ChercherProduit table th, #ChercherProduit table td{
+	background-color: white;
+	text-align: left;
+	border:0px;
+}
+
+#ChercherProduit .ligne1,  #ChercherProduit .ligne5{
+	background-color: rgb(136, 255, 89);
+}
+
+#ChercherProduit .ligne1, #ChercherProduit .ligne2, #ChercherProduit .ligne3, #ChercherProduit .ligne4, #ChercherProduit .ligne5 {
+	font-weight:bold;
+}
+
+#ChercherProduit .Ligne1{
+	width:17%;
+}
+
+#ChercherProduit .informationGeneral, #ChercherProduit .input{
+	border-radius: 5px;
+	width:100%;
+}
+
+#ChercherProdui .designation{
+	width:5%;
+}
+
+#ChercherProduit .prixInput{
+	width:18%
+}
+
+#ChercherProduit .button{
+	vertical-align: middle;
+	text-align:center;
+}
+ #ChercherProduit .buttonEnregistrer{
+	text-align:center;
+}
+
+#ChercherProduit .prixPosition{
+	width:20%;
+	text-align:center;
+	padding:6px 0;
+}
+
+#ChercherProduit #chercherProduitTable2{
+	border:0;
+}
+
+#chercherProduitTable2 .ElementImpaire{
+	background:rgb(136, 255, 89, 0.5);
+}
+
+
+#ChercherProduit #NbrProduits{
+	text-align:center;
+	color:red;
+}
+
+#ChercherProduit #libelleNbrProduit{
+	text-align:right;
+}
+
+#ChercherProduit .Designation{
+	width:15%;
+}
+
+#ChercherProduit .prix{
+	width:8.5%;
+}
+#ChercherProduit .fournisseur{
+	width:11%;
+}
+
+
+
+.icon {
+	position: relative;
+	width: 28px;
+	height: 8px;
+	border-radius: 3.5px;
+	transition: box-shadow .2s ease;
+}
+
+
+.icon:hover .lid, .icon:hover .lidcap {
+	transform: rotate(10deg);
+	margin-bottom: 10.5px;
+}
+
+.lidcap, .lid, .bin, .libelleSupprimer {
+	position: absolute;
+}
+
+.lidcap, .lid {
+	border-top-left-radius: 0.46px;
+	border-top-right-radius: 0.46px;
+	background: #111111;
+	transition: transform .2s linear, margin .2s linear;
+}
+
+.lidcap {
+	bottom: 13.32px;
+	left: 12.6px;
+	height: 1.4px;
+	width: 2.8px;
+}
+
+.lid {
+	bottom: 9.8px;
+	left: 4.2px;
+	width: 19.6px;
+	height: 2.8px;
+}
+
+.bin {
+	bottom: -6px;
+	left: 5.6px;
+	width: 14px;
+	border-top: 16.8px solid #111111;
+	border-left: 1.4px solid transparent;
+	border-right: 1.4px solid transparent;
+}
+
+.libelleSupprimer{
+	left:45px;
+	bottom:-7px;
+	display:inline-block;
+	padding:2.5px;
+	font-size:0.9em;
+	text-decoration:none;
+}
+
+.fleche{
+	float:right;
+	display:inline-block;
+}
+
+.to_top{
+	margin-bottom:30%;
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid #696969;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+.to_bottom{
+	width: 0;
+    height: 0;
+    border-top: 7px solid #696969;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+
+}
+
+.to_bottom:hover{
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+.to_bottom:hover{
+	border-top: 9px solid #696969;
+}
+
+.to_top:hover{
+    border-bottom: 9px solid #696969;
+}
+
+#chercherProduitTable2{
+	font-size:1em;
+}
+
+#ChercherProduit .ligne5{
+	font-size:1em;
+}
+
+#ChercherProduit .ligne5, #ChercherProduit .ligneProduit{
+	border:solid 1px black;
+	text-align:center;
+	vertical-align: middle;
+}
+
+#ChercherProduit .superLine{
+	text-decoration: none;
+	color:blue;
+}
+
+#ChercherProduit .Catégorie{
+	width:15%;
+}
+
+#ChercherProduit .marques{
+	width:8%;
+}
+
+#ChercherProduit .ligneProduit{
+	border-left:solid 1px #d8d8d8;
+	border-right:solid 1px #d8d8d8;
+}
+
+#chercherProduitTable2 .img{
+	padding:0px;
+}
+
+#ChercherProduit img{
+	width:30%;
+	border-radius: 6px;
+}
+
+#ChercherProduit .boutonModifierElementaire{
+	vertical-align: middle;
+}
+
+#ChercherProduit .allerInformation{
+	text-decoration: none;
+	color:blue;
+}
+
+#ChercherProduit .allerInformation:hover{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.boutonSur {
+    color: #444444;
+    background: #F3F3F3;
+    border: 1px #DADADA solid;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 9pt;
+    outline: none;
+}
+
+.boutonSur:hover {
+    border: 1px #C6C6C6 solid;
+    box-shadow: 1px 1px 1px #EAEAEA;
+    color: #333333;
+    background: #F7F7F7;
+}
+
+.boutonSur:active {
+    box-shadow: inset 1px 1px 1px #DFDFDF;
+}
+
+.boutonChanger {
+    color: white;
+    border: 1px solid #FB8F3D;
+    background: -webkit-linear-gradient(top, #FDA251, #FB8F3D);
+    background: -moz-linear-gradient(top, #FDA251, #FB8F3D);
+    background: -ms-linear-gradient(top, #FDA251, #FB8F3D);
+}
+
+.boutonChanger:hover {
+    border: 1px solid #EB5200;
+    background: -webkit-linear-gradient(top, #FD924C, #F9760B);
+    background: -moz-linear-gradient(top, #FD924C, #F9760B);
+    background: -ms-linear-gradient(top, #FD924C, #F9760B);
+    box-shadow: 0 1px #EFEFEF;
+}
+
+.boutonChanger:active {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+}
+
+.boutonPasSur {
+    background: -webkit-linear-gradient(top, #DD4B39, #D14836);
+    background: -moz-linear-gradient(top, #DD4B39, #D14836);
+    background: -ms-linear-gradient(top, #DD4B39, #D14836);
+    border: 1px solid #DD4B39;
+    color: white;
+    text-shadow: 0 1px 0 #C04131;
+}
+
+.boutonPasSur:hover {
+     background: -webkit-linear-gradient(top, #DD4B39, #C53727);
+     background: -moz-linear-gradient(top, #DD4B39, #C53727);
+     background: -ms-linear-gradient(top, #DD4B39, #C53727);
+     border: 1px solid #AF301F;
+}
+
+.boutonPasSur:active {
+     box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
+    background: -webkit-linear-gradient(top, #D74736, #AD2719);
+    background: -moz-linear-gradient(top, #D74736, #AD2719);
+    background: -ms-linear-gradient(top, #D74736, #AD2719);
+}
+
+
+
+/*SUPPRIMER PRODUIT*/
+#ChercherProduit aside{
+	margin: 2% 15%;
+	text-align: center;
+}
+
+#ChercherProduit aside button{
+	margin:0 10%;
+}
+
+#ChercherProduit .ligneProduitCocher{
+	text-align:center;
+	vertical-align: middle;
+	border-bottom:solid 1px black;
+	border-left:solid 1px #d8d8d8;
+}
+
+#ChercherProduit .cocher{
+	width:0.5%
+}
+
+#ChercherProduit .ligneProduitElement2{
+	border-left:0;
+	text-align:left;
+}
+
+/*STATISTIQUE NOMBRRE DE HORAIRE PAR JOUR*/
+
+#NbrEmploy table{
+	margin :auto ;
+	width :70%;
+}
+
+#NbrEmploy .table1{
+	margin-bottom:5%;
+	border:0px;
+}
+
+#NbrEmploy .table1 td{
+	border:0;
+}
+
+#NbrEmploy .ligne1_table1{
+	background-color: rgb(136, 255, 89);
+}
+
+#NbrEmploy .ligne2_table1{
+	text-align:center;
+}
+
+#NbrEmploy .input{
+
+	border-radius: 5px;
+}
+
+#NbrEmploy .table2{
+	margin-left:35%;
+	width:40%;
+	text-align:center;
+}
+
+#NbrEmploy .ligne2{
+text-align:center;
+vertical-align: middle;
+}
+
+#NbrEmploy .libelle, .NombreHoraire{
+	background-color: white;
+}
+
+#NbrEmploy .ligne2 a, .Moyen{
+	text-decoration: none;
+	color:black;
+	font-weight: bold;
+}
+
+
+/*STATISTIQUE NOMBRRE DE VENTES PAR JOUR*/
+
+#NbrVenteAchat table, #NbrVenteAchat h3, #NbrEmploy table{
+	margin :auto ;
+	margin-top:0px;
+	width :90%;
+	border-radius: 4px;
+    border-collapse: collapse;
+    border-style:hidden  ;
+    box-shadow: 0 0 0 1px #d8d8d8;
+	margin-left:5%;
+}
+
+#NbrVenteAchat table th, #NbrVenteAchat table td{
+	background-color: white;
+	text-align: left;
+	border:0px;
+}
+
+#NbrVenteAchat h3{
+	font-size:1.2em;
+	margin-top:5%;
+	font-weight:bold;
+	text-align:center;
+
+}
+
+#NbrVenteAchat #libelle, #NbrVenteAchat #NombreHoraire, #NbrVenteAchat .numerote{
+	font-weight: bold;
+}
+
+#NbrVenteAchat .backColor{
+	background-color:rgb(136, 255, 89);
+	text-align:center;
+}
+
+#NbrVenteAchat .ligne2_table1, #NbrVenteAchat .Total, #NbrVenteAchat .ligneDernier,
+#NbrVenteAchat .ligne1_table2, #NbrVenteAchat .Total, #NbrVenteAchat .QuantiteClient{
+	text-align:center;
+}
+
+#NbrVenteAchat .date{
+	border-radius: 5px;
+}
+
+#NbrVenteAchat .ligne1_table2, #NbrVenteAchat .Désignation, #NbrVenteAchat .Prix,
+#NbrVenteAchat .Quantité, #NbrVenteAchat .Montant, #NbrVenteAchat .Promotion,
+#NbrVenteAchat .Client, #NbrVenteAchat .Total, #NbrVenteAchat .QuantitéTotal,
+#NbrVenteAchat .Fournisseur, #NbrVenteAchat .DésignationAchat, #NbrVenteAchat .PrixAchat{
+	border-bottom:solid 1px	black;
+	background-color:white ;
+	vertical-align:middle;
+	border-left:solid 1px #d8d8d8;
+}
+
+#NbrVenteAchat .ligneAvant_table2{
+	text-align:center;
+	font-weight:bold;
+	border-left:solid 2px #d8d8d8;
+}
+
+#NbrVenteAchat .ligne1_table2{
+	font-weight:bold;
+	border:solid 1px black;
+}
+
+#NbrVenteAchat .PromotionOui{
+	color:#dc143c;
+	font-weight:bold;
+}
+
+
+#NbrVenteAchat .Client{
+		border-left:solid 2px rgb(184,134,11,0.5);
+}
+
+#NbrVenteAchat .ligne1_table2{
+	background-color: rgb(136, 255, 89);
+}
+
+#NbrVenteAchat .table2{
+	margin-top:2.5%;
+}
+
+#ChercherProduit .nbr, #NbrVenteAchat .nbr, #NbrEmploy .nbr{
+	color:red;
+	font-weight:bold;
+	border-bottom:solid 1px black;
+}
+
+#NbrVenteAchat .ElementPaire {
+	  background-color: rgb(136, 255, 89,0.5);
+}
+
+#NbrVenteAchat h3{
+	background-color:rgb(255,105,180,0.5);
+}
+
+#NbrVenteAchat .h3_2{
+	background-color:rgb(0,0,139,0.3);
+}
+
+#NbrVenteAchat .prixPromotion{
+	color:#dc143c;
+	font-size:0.85em;
+}
+
+/*NOMBRE DE ACHAT PAR JOUR*/
+#NbrVenteAchat .tableAchat{
+	margin-left:16.5%;
+	width :60%;
+	margin-bottom:5%;
+}
+
+#NbrVenteAchat .Fournisseur,#NbrVenteAchat .PrixAchat, #NbrVenteAchat .DésignationAchat {
+	text-align:center;
+}
+
+/* consulterclient*/
+#consulterclient .fond{
+  width: 60%;
+  margin-left: 20%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+
+}
+#consulterclient .millieu{
+  text-align: center;
+  padding-top: 2px;
+}
+#consulterclient .base{
+  width: 60%;
+  margin-left: 20%;
+  border: black solid 1px;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 10%;
+}
+#consulterclient .titre{
+  margin-left:1.5%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 2px;
+  margin-top: 1%;
+}
+#consulterclient .couleur{
+    background-color: rgb(136, 255, 89);
+}
+#consulterclient .base h2{
+  background-color: white;
+  border-style: none;
+}
+#consulterclient .espace{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#consulterclient .boutonChanger {
+    color: white;
+    border: 1px solid lightgrey;
+    background: -webkit-linear-gradient(top, lightgrey, lightgrey);
+    background: -moz-linear-gradient(top, lightgrey, lightgrey);
+    background: -ms-linear-gradient(top, lightgrey, lightgrey);
+}
+
+#consulterclient .boutonChanger:hover {
+    border: 1px solid #EB5200;
+    background: -webkit-linear-gradient(top, #FD924C, #F9760B);
+    background: -moz-linear-gradient(top, #FD924C, #F9760B);
+    background: -ms-linear-gradient(top, #FD924C, #F9760B);
+    box-shadow: 0 1px #EFEFEF;
+}
+
+#consulterclient .boutonChanger:active {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+}
+/* consulterclient2*/
+#consulterclient2 .fond{
+  width: 60%;
+  margin-left: 20%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+
+}
+#consulterclient2 .millieu{
+  text-align: center;
+  padding-top: 2px;
+}
+#consulterclient2 .base{
+    width: 60%;
+  margin-left: 20%;
+  border: black solid 1px;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 10%;
+}
+#consulterclient2 .titre{
+  margin-left:1.5%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 2px;
+  margin-top: 1%;
+}
+#consulterclient2 .couleur{
+    background-color: rgb(136, 255, 89);
+}
+#consulterclient2 .base h2{
+  background-color: white;
+  border-style: none;
+}
+#consulterclient2 .espace{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#consulterclient2 .boutonChanger {
+    color: white;
+    border: 1px solid lightgrey;
+    background: -webkit-linear-gradient(top, lightgrey, lightgrey);
+    background: -moz-linear-gradient(top, lightgrey, lightgrey);
+    background: -ms-linear-gradient(top, lightgrey, lightgrey);
+}
+
+#consulterclient2 .boutonChanger:hover {
+    border: 1px solid #EB5200;
+    background: -webkit-linear-gradient(top, #FD924C, #F9760B);
+    background: -moz-linear-gradient(top, #FD924C, #F9760B);
+    background: -ms-linear-gradient(top, #FD924C, #F9760B);
+    box-shadow: 0 1px #EFEFEF;
+}
+
+#consulterclient2 .boutonChanger:active {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+}
+/* consulterclient3*/
+#consulterclient3 .fond{
+  width: 60%;
+  margin-left: 20%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+
+}
+#consulterclient3 .millieu{
+  text-align: center;
+  padding-top: 2px;
+}
+#consulterclient3 .base{
+    width: 60%;
+  margin-left: 20%;
+  border: black solid 1px;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 10%;
+}
+#consulterclient3 .titre{
+  margin-left:1.5%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 2px;
+  margin-top: 1%;
+}
+#consulterclient3 .couleur{
+  background-color: rgb(136, 255, 89);
+}
+#consulterclient3 .base h2{
+  background-color: white;
+  border-style: none;
+}
+#consulterclient3 .espace{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#consulterclient3 .boutonChanger {
+    color: white;
+    border: 1px solid lightgrey;
+    background: -webkit-linear-gradient(top, lightgrey, lightgrey);
+    background: -moz-linear-gradient(top, lightgrey, lightgrey);
+    background: -ms-linear-gradient(top, lightgrey, lightgrey);
+}
+
+#consulterclient3 .boutonChanger:hover {
+    border: 1px solid #EB5200;
+    background: -webkit-linear-gradient(top, #FD924C, #F9760B);
+    background: -moz-linear-gradient(top, #FD924C, #F9760B);
+    background: -ms-linear-gradient(top, #FD924C, #F9760B);
+    box-shadow: 0 1px #EFEFEF;
+}
+
+#consulterclient3 .boutonChanger:active {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+}
+/* consulterclientvide*/
+#consulterclientvide .fond{
+  width: 60%;
+  margin-left: 20%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+
+}
+#consulterclientvide .millieu{
+  text-align: center;
+  padding-top: 2px;
+}
+#consulterclientvide .base{
+    width: 60%;
+  margin-left: 20%;
+  border: black solid 1px;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 10%;
+}
+#consulterclientvide .titre{
+  margin-left:1.5%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 2px;
+  margin-top: 1%;
+}
+#consulterclientvide .base h2{
+  background-color: white;
+  border-style: none;
+}
+#consulterclientvide .espace{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#consulterclientvide .boutonChanger {
+    color: white;
+    border: 1px solid lightgrey;
+    background: -webkit-linear-gradient(top, lightgrey, lightgrey);
+    background: -moz-linear-gradient(top, lightgrey, lightgrey);
+    background: -ms-linear-gradient(top, lightgrey, lightgrey);
+}
+
+#consulterclientvide .boutonChanger:hover {
+    border: 1px solid #EB5200;
+    background: -webkit-linear-gradient(top, #FD924C, #F9760B);
+    background: -moz-linear-gradient(top, #FD924C, #F9760B);
+    background: -ms-linear-gradient(top, #FD924C, #F9760B);
+    box-shadow: 0 1px #EFEFEF;
+}
+
+#consulterclientvide .boutonChanger:active {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+}
+/* modifierclientdupont */
+
+#modifierclientdupont .millieu{
+  text-align: center;
+  padding-top: 2px;
+}
+#modifierclientdupont .base{
+    width: 60%;
+  margin-left: 20%;
+  border: black solid 1px;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 10%;
+}
+#modifierclientdupont .titre{
+  margin-left:1.5%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 2px;
+  margin-top: 1%;
+}
+#modifierclientdupont .base h2{
+  background-color: white;
+  border-style: none;
+}
+#modifierclientdupont .espace{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#modifierclientdupont .fond{
+  width: 60%;
+  margin-left: 20%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+}
+/* modifierclientpatrick */
+#modifierclientpatrick .fond{
+  width: 60%;
+  margin-left: 20%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+
+}
+#modifierclientpatrick .base{
+    width: 60%;
+  margin-left: 20%;
+  border: black solid 1px;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 10%;
+}
+#modifierclientpatrick .titre{
+  margin-left:1.5%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 2px;
+  margin-top: 1%;
+}
+#modifierclientpatrick .base h2{
+  background-color: white;
+  border-style: none;
+}
+#modifierclientpatrick .espace{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* creerclient */
+#creerclient .millieu{
+  text-align: center;
+  padding-top: 2px;
+}
+#creerclient .base{
+  width: 60%;
+  margin-left: 20%;
+  border: black solid 1px;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 10%;
+}
+#creerclient .titre{
+  margin-left:1.5%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 2px;
+  margin-top: 1%;
+}
+#creerclient .base h2{
+  background-color: white;
+  border-style: none;
+}
+#creerclient .espace{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#creerclient .next {
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+#creerclient .next:hover {
+  background-color: #ddd;
+  color: black;
+}
+#creerclient .formulaire{
+  margin: auto;
+  padding-top : 5px;
+  padding-bottom: 5px;
+}
+#creerclient .fond{
+  width: 60%;
+  margin-left: 20%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+
+}
+/* consulterfacture */
+#consulterfacture .fond{
+  width: 60%;
+  margin-left: 20%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+
+}
+#consulterfacture .millieu{
+  text-align: center;
+  padding-top: 2px;
+}
+#consulterfacture .base{
+  width: 60%;
+  margin-left: 20%;
+  border: black solid 1px;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 10%;
+}
+#consulterfacture .titre{
+  margin-left:1.5%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 2px;
+  margin-top: 1%;
+}
+#consulterfacture .noborder .base{
+  border-style: none;
+}
+#consulterfacture .couleur{
+    background-color: rgb(136, 255, 89);
+}
+#consulterfacture .base h2{
+  background-color: white;
+  border-style: none;
+}
+#consulterfacture .espace{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* consultervirement */
+#consultervirement .fond{
+  width: 60%;
+  margin-left: 20%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+}
+#consultercirement .millieu{
+  text-align: center;
+  padding-top: 2px;
+}
+#consultervirement .base{
+  width: 60%;
+  margin-left: 20%;
+  border: black solid 1px;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 10%;
+}
+#consultervirement .titre{
+  margin-left:1.5%;
+  background-color: rgb(136, 255, 89);
+  border: black solid 1px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 2px;
+  margin-top: 1%;
+}
+#consultervirement .noborder .base{
+  border-style: none;
+}
+#consultervirement .couleur{
+    background-color: rgb(136, 255, 89);
+}
+#consultervirement .base h2{
+  background-color: white;
+  border-style: none;
+}
+#consultervirement .espace{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.enregistrerEmploye table{
+  margin: auto;
+  width: 80%
+}
+
+.enregistrerEmploye table h3{
+  padding-bottom: 1%;
+}
+
+.employe .un {
+  display: flex;
+  padding: 1%;
+  justify-content: space-around;
+}
+
+.employe .un p{
+  width: 40%;
+}

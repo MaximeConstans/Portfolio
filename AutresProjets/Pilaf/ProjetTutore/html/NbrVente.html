@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/maquette.css">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.png" alt="logo">
+      <h1>Societe Pilaf</h1>
+    </header>
+
+    <div class="corps">
+      <nav class="Principal">
+        <ul>
+          <li class="ElementImpaire"><a href="creerCommande.html">Achat</a></li>
+          <li><a href="consulterFacture.html">Banque</a></li>
+          <li class="ElementImpaire"><a href="creerClient.html">Client</a></li>
+          <li><a href="creerEmploye.html">Employé</a></li>
+          <li class="ElementImpaire"><a href="creerFournisseur.html">Fournisseur</a></li>
+          <li><a href="enregistrerHoraire.html">Horaire</a></li>
+          <li class="ElementImpaire"><a href="creerProduit.html">Produit</a></li>
+          <li><a href="enregistrerMouvementStock.html">Stock</a></li>
+          <li class="ElementImpaire onEst"><a href="statsNbrEmploy.html">Statistique</a></li>
+          <li><a href="enregistrerVente.html">Vente</a></li>
+        </ul>
+      </nav>
+
+      <div class="useCase">
+        <nav>
+          <ul>
+            <li><a href="statsNbrEmploy.html">Nombre d'horaire d'employé par jour</a></li>
+            <li><a class="onEst" href="NbrVente.html">Nombre de ventes par jour</a></li>
+            <li><a href="NbrAchat.html">Nombre d’achat par jour</a></li>
+          </ul>
+        </nav>
+		
+	    <section id="NbrVenteAchat">
+			<article>
+				<h2>STATISTIQUES NOMBRE DE VENTES PAR JOUR</h2>
+				<table class="table1">
+					<tr>
+						<td class="backColor">
+						<label for="JourDebut">De:</label>
+						<input class="date" type="datetime-local" id="txtDate"  min="2015-01-01"/>
+						<label for="JourFin">à</label>
+						<input class="date" type="datetime-local" id="txtDate"  min="2015-01-01"/>
+						</td>
+						<td class="backColor">
+							<a>Promotion </a>
+							<select class="date">
+								<option value="0">Tout</option>
+								<option value="1">En promotion</option>
+								<option value="2">Non promotion</option>
+							</select>	
+						</td>
+						<td class="backColor">
+							<a>Le chiffre d'affaire est de </a>
+							<p class="nbr">0,00 €</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="ligne2_table1" colspan="3">
+							<button class="boutonSur"><a href="NbrVenteExemple.html">Valider</a></button>
+						</td>
+					</tr>
+				</table>
+			</article>	
+
+			<article>
+				<h3>les 10 produits les plus vendus</h3>
+				<table class="table2">
+					<tr>
+					<th class="ligneAvant_table2" colspan="5">
+						<label for="générale">Information générale</label>
+					</th>
+					<th class="ligneAvant_table2" colspan="3">
+						<label for="clientèle">Information clientèle</label>
+					</th>
+					</tr>
+					<tr>
+						<th class="ligne1_table2">
+							<label for="Désignation">Désignation</label>
+							<div class="fleche">
+								<div class="to_top"></div>
+								<div class="to_bottom"></div>
+							</div>							
+						</th>
+						
+						<th class="ligne1_table2" style="width:10%;">
+							<label for="Promotion">Période promo</label>
+							<div class="fleche">
+								<div class="to_top"></div>
+								<div class="to_bottom"></div>
+							</div>							
+						</th>
+						
+						<th class="ligne1_table2">
+							<label for="Promotion">Promotion</label>
+							<div class="fleche">
+								<div class="to_top"></div>
+								<div class="to_bottom"></div>
+							</div>							
+						</th>
+						<th class="ligne1_table2">
+							<a class="prixPromotion">*</a>
+							<label for="Prix">Prix</label>
+							<div class="fleche">
+								<div class="to_top"></div>
+								<div class="to_bottom"></div>
+							</div>							
+						</th>
+
+						<th class="ligne1_table2">					
+							<label for="QuantitéTotale">Quantité Totale</label>
+						</th>
+						<th class="ligne1_table2">
+							<div class="fleche">
+								<div class="to_top"></div>
+								<div class="to_bottom"></div>
+							</div>						
+							<label for="Montant Total">Montant Total</label>
+						</th>
+						<th class="ligne1_table2 Client">
+							<label for="Client">Client</label>					
+						<th class="ligne1_table2">						
+							<label for="Quantité">Quantité</label>
+						</th>
+						<th class="ligne1_table2">						
+							<label for="Montant">Montant</label>
+						</th>						
+					</tr>
+					
+					
+					
+					
+						<td colspan="9">
+							<a class="prixPromotion">* Des prix en rouge sont des prix après promotion. </a>
+						</td>
+					</tr>
+					
+									
+	
+				</table>						
+			</article>			
+
+			<article>
+				<h3 class="h3_2">Les 10 produits les moins vendus</h3>
+				<table class="table2">
+					<tr>
+					<th class="ligneAvant_table2" colspan="5">
+						<label for="générale">Information générale</label>
+					</th>
+					<th class="ligneAvant_table2" colspan="3">
+						<label for="clientèle">Information clientèle</label>
+					</th>
+					</tr>				
+					<tr>
+						<th class="ligne1_table2">
+							<label for="Désignation">Désignation</label>
+							<div class="fleche">
+								<div class="to_top"></div>
+								<div class="to_bottom"></div>
+							</div>							
+						</th>
+						<th class="ligne1_table2" style="width:10%;">
+							<label for="Promotion">Période promo</label>
+							<div class="fleche">
+								<div class="to_top"></div>
+								<div class="to_bottom"></div>
+							</div>							
+						</th>
+						<th class="ligne1_table2" >
+							<label for="Promotion">Promotion</label>
+							<div class="fleche">
+								<div class="to_top"></div>
+								<div class="to_bottom"></div>
+							</div>							
+						</th>
+						<th class="ligne1_table2">
+							<a class="prixPromotion">*</a>
+							<label for="Prix">Prix</label>
+							<div class="fleche">
+								<div class="to_top"></div>
+								<div class="to_bottom"></div>
+							</div>							
+						</th>
+
+						<th class="ligne1_table2">						
+							<label for="Montant Total">Quantité Totale</label>
+						</th>
+						<th class="ligne1_table2">
+							<div class="fleche">
+								<div class="to_top"></div>
+								<div class="to_bottom"></div>
+							</div>						
+							<label for="Montant Total">Montant Total</label>
+						</th>
+						<th class="ligne1_table2 Client">
+							<label for="Client">Client</label>
+												
+						</th>						
+						<th class="ligne1_table2">
+										
+							<label for="Quantité">Quantité</label>
+						</th>
+						<th class="ligne1_table2">
+											
+							<label for="Montant">Montant</label>
+						</th>						
+					</tr>
+					
+					
+					
+					<tr>
+						<td colspan="9">
+							<a class="prixPromotion">* Des prix en rouge sont des prix après promotion. </a>
+						</td>
+					</tr>
+									
+	
+				</table>						
+			</article>					
+		
+		</section>
+		
+      </div>
+
+    </div>
+
+  </body>
+</html>

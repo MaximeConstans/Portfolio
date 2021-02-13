@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/maquette.css">
+    <title>Modifier Commande</title>
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.png" alt="logo">
+      <h1>Societe Pilaf</h1>
+    </header>
+
+    <div class="corps">
+      <nav class="Principal">
+        <ul>
+          <li class="ElementImpaire onEst"><a href="creerCommande.html">Achat</a></li>
+          <li><a href="consulterFacture.html">Banque</a></li>
+          <li class="ElementImpaire"><a href="creerClient.html">Client</a></li>
+          <li><a href="creerEmploye.html">Employé</a></li>
+          <li class="ElementImpaire"><a href="creerFournisseur.html">Fournisseur</a></li>
+          <li><a href="enregistrerHoraire.html">Horaire</a></li>
+          <li class="ElementImpaire"><a href="creerProduit.html">Produit</a></li>
+          <li><a href="enregistrerMouvementStock.html">Stock</a></li>
+          <li class="ElementImpaire"><a href="statsNbrEmploy.html">Statistique</a></li>
+          <li><a href="enregistrerVente.html">Vente</a></li>
+        </ul>
+      </nav>
+
+      <div class="useCase">
+        <nav>
+          <ul>
+            <li><a href="creerCommande.html">Creer une commande</a></li>
+            <li class="onEst"><a href="modifierCommande.html">Modifier une commande</a></li>
+            <li><a href="consulterCommande.html">Consulter une commande</a></li>
+            <li><a href="receptionnerLivraison.html">Receptionner une livraison</a></li>
+          </ul>
+        </nav>
+
+        <div class="casUtilisation modifierCommande creerCommande">
+          <h2>MODIFIER UNE COMMANDE</h2>
+          <br>
+          <fieldset class="AideRecherche">
+            <label class="Recherche">Rechercher : </label>
+            <input type="search" class="Recherche" placeholder="Rechercher">
+
+            <label class="CritereAffichage">Critère d'affichage</label>
+            <select class="CritereAffichage">
+              <option value="Tout">Tout</option>
+              <option value="P">Payé</option>
+              <option value="NP">Non Payé</option>
+            </select>
+          </fieldset>
+
+
+          <br>
+          <br>
+          <table>
+            <thead>
+              <tr>
+                <th>Num Commande</th>
+                <th>Fournisseur</th>
+                <th>Produits(Quantite)</th>
+                <th>Remise</th>
+                <th>Prix Final</th>
+                <th>Date Achat</th>
+                <th>Payé</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>15236G</td>
+                <td>tomatBio</td>
+                <td>Tomate Large(<input type="number" class="Quantite" value="150">)
+                <br>Tomate Coeur de Boeuf(<input type="number" class="Quantite" value="70">)</td>
+                <td><input type="number" class="Pourcentage" value="0">%</td>
+                <td>247.5</td>
+                <td>20/04/2020</td>
+                <td>NON</td>
+
+              </tr>
+
+              <tr>
+                <td>J156HG</td>
+                <td>Salade de nos Regions</td>
+                <td>Laitue (150)
+                </td>
+                <td>0%</td>
+                <td>159.3</td>
+                <td>21/04/2020</td>
+                <td>OUI</td>
+              </tr>
+
+            </tbody>
+          </table>
+          <br>
+          <div class="Confirmation">
+            <button class="boutonSur"><a href="modifierCommande.html" class="Valider">Valider</a></button>
+            <button href="#" class="boutonPasSur">Annuler</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/maquette.css">
+
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.png" alt="logo">
+      <h1>Societe Pilaf</h1>
+    </header>
+
+    <div class="corps">
+      <nav class="Principal">
+        <ul>
+          <li class="ElementImpaire"><a href="creerCommande.html">Achat</a></li>
+          <li><a href="consulterFacture.html">Banque</a></li>
+          <li class="ElementImpaire"><a href="creerClient.html">Client</a></li>
+          <li><a href="creerEmploye.html">Employé</a></li>
+          <li class="ElementImpaire"><a href="creerFournisseur.html">Fournisseur</a></li>
+          <li><a href="enregistrerHoraire.html">Horaire</a></li>
+          <li class="ElementImpaire onEst"><a  href="creerProduit.html">Produit</a></li>
+          <li><a href="enregistrerMouvementStock.html">Stock</a></li>
+          <li class="ElementImpaire"><a href="statsNbrEmploy.html">Statistique</a></li>
+          <li><a href="enregistrerVente.html">Vente</a></li>
+        </ul>
+		</nav><div class="useCase">
+			<nav>
+			  <ul>
+				<li ><a href="creerProduit.html">Enregistrer un produit </a></li>
+				<li ><a class="onEst" href="creerProduit.html">Modifier un produit </a></li>
+				<li><a href="ChercherProduit.html">Chercher produits </a></li>
+			  </ul>
+			</nav>
+			
+			<section id="EnregistrerEtModifierProduit">
+				<h2>ENREGISTRER UN PRODUIT</h2>
+				<aside class="infoCréation">
+					<div>
+						<a>Enregistrer le 03/06/2020 mercredi à 10:00 a.m. </a>
+						
+						<a>Par L'utilisateur M. DUPONT Jean.</a>
+					</div>
+				</aside>
+				<article>
+					<h3>Information principale</h3>
+					<table class="informationPrincipale">
+						<tr>
+							<th class="label1 Ligne1 ligne1" style="width:30%;">
+								<div class="labelLibelle"><label for="designation">Désignation* :</label></div>
+								<div class="labelLibelle"><label for="Catégorie">Catégorie* :</label></div>								
+								<div class="labelLibelle"><label for="Prix">Prix de vente HT* : </label></div>
+								<div class="labelLibelle"><label for="TVA">TVA* : </label></div>
+							</th>
+							<td class="Ligne1">
+								<div class="InterligneInput">
+									<input class="Input" type="text"  placeholder="Ex :Fruit" name="Type" value="Durion bio">
+								</div>
+								<div class="InterligneInput">
+									<input class="Input" type="text" list="CatégorieList1" value="Fruit">
+									<datalist id="CatégorieList1">
+										<option selected="selected">Fruit</option>
+										<option>Légume</option>
+										<option>Fruit</option>
+										<option>Légume</option>
+										<option>Riz</option>
+									</datalist>
+								</div>							
+								<div class="InterligneInput"><input class="prix Input" type="text"  placeholder="Ex: 3" name="prixVenteHT" value="5">
+									<a >€</a>
+								</div>
+								<div class="InterligneInput"><input class="Taux Input" type="text"  placeholder="Ex: 20" name="TVA" value="20">
+									<a >%</a>
+								</div>								
+							</td>
+							<td class="Ligne1 img" >
+								<img src="../images/Durion.jpg" style="width:150px;height: 150px; padding-top:3%; border-radius: 15px;" id="img_produit">
+							</td>
+						</tr>
+						<tr>
+							<th class="Ligne2 ligne2" colspan="2">
+							
+							<label for="PrixVenteTTC">Prix de vente TTC : &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;6 €</label>
+							</th>
+							<td class="buttonAjouter Ligne2">
+								<label for="file">
+									<input id="file" type="file" name="Ajouter une photo" value="Ajouter une photo">
+									<p class="AjouterUnePhoto boutonChanger">Ajouter une photo<p>
+
+								
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th class="Ligne3 ligne3">
+								<div class="labelLibelle"><label for="PrixAchatTTC">Prix d'achat TTC : </label></div>
+								<div class="labelLibelle"><label for="Garantie">Garantie* : </label></div>
+								<div class="labelLibelle"><label for="Label">Label: </label></div>
+							</th>
+							<td class="Ligne3">
+								<div class="InterligneInput"><input class="prix Input" type="text"  placeholder="Ex: 3" name="PrixAchatTTC" value="3">
+									<a >€</a>
+								</div>	
+								<div class="InterligneInput"><input class="Garantie Input" type="text"  placeholder="Ex: 20" name="Garantie" value="20">
+									<a>jour(s)</a>
+								</div>
+								<div class="InterligneInput">
+									<input class="Label Input" type="text"  placeholder="Ex: Frais" name="Label" value="Asia-fruit">
+								</div>
+							</td>							
+							<td class="Ligne3 img" style="text-align:center;" >	
+									
+								<a>Reference : TD10003I100020</a>	
+								<br>								
+								<a>Code barre : 01234567890</a>
+								<br> 								
+								<img src="../images/code_barre.jpg" style="width:150px;padding-top:3%;" id="img_code_barre">
+							</td>
+							
+						</tr>
+					</table>
+
+					<h3>Information complémentaire</h3>
+					<table class="informationComplementaire">
+						<tr>
+							<td class="label2 Ligne3" colspan="2" >
+								<div class="case_table2">
+									<label style="padding-left:1.5%" for="designation" >Pays :&ensp;&ensp;&ensp;</label>
+									<select class="Input" name="pays">
+										<option value="France">France </option>
+
+										<option value="Afghanistan">Afghanistan </option>
+										<option value="Afrique_Centrale">Afrique_Centrale </option>
+										<option value="Afrique_du_sud">Afrique_du_Sud </option>
+										<option value="Albanie">Albanie </option>
+										<option value="Algerie">Algerie </option>
+										<option value="Allemagne">Allemagne </option>
+										<option value="Andorre">Andorre </option>
+										<option value="Angola">Angola </option>
+										<option value="Vietnam" selected="selected">Vietnam </option>
+									</select>
+								</div>
+								<div class="case_table2">
+									<label style="padding-left:1.5%" for="designation" value="Jianxing">Région :&ensp;</label>
+									<select class="Input" name="Région">										
+										<option value="Jianxing">Jianxing </option>
+										<option value="Attestation">Attestation </option>
+									</select>
+								</div>
+							</td>
+							<td class="Ligne3">
+								<div class="case_table2">
+									<label style="padding-left:1.5%" for="Fournisseur">Fournisseur :&ensp;</label>
+									<select class="Input">
+										<option value="0">Bio-Bio</option>
+										<option value="1" selected="selected">Fruit-Fruit</option>
+										<option value="2">Grand-Bio</option>
+									</select>
+									<button class="boutonAjouterSupprimer" onClick="return confirm('Vous allez sauter à une autre page.');" onclick="location.href='creerProduit.html'">
+										<a class="boutonAjouterSupprimerSynpole" >⊕</a>
+									</button>
+								</div>
+								<div class="case_table2">
+									<label style="padding-left:1.5%" for="Marque">Marque :&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</label>
+									<input class="Input" type="text" list="MarqueList" value="A table !">
+									<datalist  id="MarqueList" >
+										<option value="A table !" selected="selected">A table ! </option>
+										<option value="A.Vogel">A.Vogel </option>
+										<option value="De Saint-Hilaire">De Saint-Hilaire </option>
+										<option value="Easygreen">Easygreen </option>
+										<option value="Felicia">Felicia </option>
+										<option value="Gaïa">Gaïa </option>
+										<option value="Hamac">Hamac </option>
+									</datalist>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th class="Ligne3" colspan="2"><label class="label2" for="Détail">Détail d'un produit :</label></th>
+							<td class="Ligne3">
+								<div>
+									<label style="padding-left:1.5%" for="Marque">Nutri score :&ensp;</label>
+									<select  class="Input">
+										<option value="A" selected="selected">A </option>
+										<option value="B">B </option>
+										<option value="C">C </option>
+										<option value="D">D </option>
+										<option value="E">E </option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="inputDetail Ligne3" colspan="2" >
+								<textarea  class="Input" style="margin-left:15%;" name="reworkmes"   cols="40"   rows="6"   style="OVERFLOW:   hidden"  placeholder="Ex :C'est un produit bio qui est bienvenu par le public selon la recherche. C'est bio, frais et bien pour la santé." >C'est un produit bio qui est bienvenu par le public selon la recherche. C'est bio, frais et bien pour la santé.</textarea>
+							</td>
+							<td class="Ligne3" colspan="1"></td>
+						</tr>
+					</table>
+					
+					<h3 class="TitreAjouterPromotion">Ajouter promotion</h3>
+					<table class="table3">
+						<tr>
+							<th class="ligne1_table3"></th>
+							<th class="ligne1_table3">Désignation*</th>
+							
+							<th class="ligne1_table3">Proposition*</th>
+							
+							<th class="ligne1_table3">Période*</th>
+							
+							<th class="ligne1_table3">Prix après promo</th>
+						</tr>
+						<tr>
+							<td class="ligne2_table3">
+								<button class="boutonAjouterSupprimer">
+										<a class="boutonAjouterSupprimerSynpole" >⊕</a>
+								</button>
+							</td>
+							<td class="ligne2_table3">
+								<input class="Input Désignation" type="text" value="Fruit-jour">
+							</td>
+							<td class="ligne2_table3">
+								<input class="Input Taux" type="text" value="80">
+								<a> %</a>
+							</td>
+							<td class="ligne2_table3"> 
+								<label for="JourDebut">De:</label>
+								<input class="date Input" type="date" id="txtDate" value="2020-06-03" min="2015-01-01"/>
+								<label for="JourFin">à</label>
+								<input class="date Input" type="date" id="txtDate" value="2020-06-07" min="2015-01-01"/>
+							</td>
+							<td class="ligne2_table3" >
+								<a>&ensp;&ensp;&ensp;&ensp;&ensp;5.4 €&ensp;&ensp;&ensp;&ensp;&ensp;</a>
+								<button class="boutonSupprimer boutonAjouterSupprimer">
+									<a class="boutonSupprimerSynpole boutonAjouterSupprimerSynpole">Θ</a>									
+								</button>
+								
+							
+							</td>	
+						
+						</tr>
+						<tr>
+							<td class="ligne2_table3">
+								<button class="boutonAjouterSupprimer">
+										<a class="boutonAjouterSupprimerSynpole" >⊕</a>
+								</button>
+							</td>
+							<td class="ligne2_table3">
+								<input class="Input Désignation" type="text">
+							</td>
+							<td class="ligne2_table3">
+								<input class="Input Taux" type="text" ">
+								<a> %</a>
+							</td>
+							<td class="ligne2_table3"> 
+								<label for="JourDebut">De:</label>
+								<input class="date Input" type="date" id="txtDate"  min="2015-01-01"/>
+								<label for="JourFin">à</label>
+								<input class="date Input" type="date" id="txtDate"  min="2015-01-01"/>
+							</td>
+							<td class="ligne2_table3" >
+								<a></a>
+
+							
+							</td>	
+						
+						</tr>
+					</table>
+						
+				</article>
+				
+				
+
+				<aside>
+					<button class="boutonSur"><a href="ChercherProduitExempleDurionBio.html">Valider</a></button>
+					<button class="boutonPasSur"><a href="creerProduit.html">Annuler</a></button>
+				</aside>
+		  
+			</section>
+
+		</div>
+		
+    </div>
+
+  </body>
+</html>

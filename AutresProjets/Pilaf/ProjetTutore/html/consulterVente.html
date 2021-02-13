@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/maquette.css">
+    <title>Consulter une vente</title>
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.png" alt="logo">
+      <h1>Societe Pilaf</h1>
+    </header>
+
+    <div class="corps">
+      <nav class="Principal">
+        <ul>
+          <li class="ElementImpaire"><a href="creerCommande.html">Achat</a></li>
+          <li><a href="consulterFacture.html">Banque</a></li>
+          <li class="ElementImpaire"><a href="creerClient.html">Client</a></li>
+          <li><a href="creerEmploye.html">Employé</a></li>
+          <li class="ElementImpaire"><a href="creerFournisseur.html">Fournisseur</a></li>
+          <li><a href="enregistrerHoraire.html">Horaire</a></li>
+          <li class="ElementImpaire"><a href="creerProduit.html">Produit</a></li>
+          <li><a href="enregistrerMouvementStock.html">Stock</a></li>
+          <li class="ElementImpaire"><a href="statsNbrEmploy.html">Statistique</a></li>
+          <li class="onEst"><a href="enregistrerVente.html">Vente</a></li>
+        </ul>
+      </nav>
+
+      <div class="useCase">
+        <nav>
+          <ul>
+            <li><a href="enregistrerVente.html">Enregistrer une vente</a></li>
+            <li class="onEst"><a href="consulterVente.html">Consulter une vente</a></li>
+          </ul>
+        </nav>
+
+        <div class="casUtilisation consulterVente">
+          <h2>CONSULTER UNE VENTE</h2>
+          <br>
+          <fieldset class="AideRecherche">
+            <label class="Recherche">Rechercher : </label>
+            <input type="search" class="Recherche" placeholder="Numero de vente">
+
+            <label class="CritereAffichage">Critère d'affichage</label>
+            <select class="CritereAffichage">
+              <option value="Tout">Tout</option>
+              <option value="ClientInconnu">Client Inconnu</option>
+              <option value="ClientConnu">Client Connu</option>
+            </select>
+          </fieldset>
+
+
+          <br>
+          <br>
+          <table>
+            <thead>
+              <tr>
+                <th>Numero Vente <div class="fleche">
+                  <div class="to_top"></div>
+                  <div class="to_bottom"></div>
+                </div></th>
+
+                <th>Numero Client <div class="fleche">
+                  <div class="to_top"></div>
+                  <div class="to_bottom"></div>
+                </div></th>
+
+                <th>Employé <div class="fleche">
+                  <div class="to_top"></div>
+                  <div class="to_bottom"></div>
+                </div></th>
+
+                <th>Produits(Quantité)</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1526853G</td>
+                <td>85954J</td>
+                <td>Jean Dupont</td>
+                <td>Laitue(3)
+                <br>tomates larges(20)</td>
+                <td>10.50</td>
+              </tr>
+
+              <tr>
+                <td>526335HJ</td>
+                <td class="inconnu">INCONNU</td>
+                <td>Jean Dupont</td>
+                <td>Tomate coeur de boeuf(25)</td>
+                <td>12</td>
+              </tr>
+            </tbody>
+          </table>
+       </div>
+
+    </div>
+  </div>
+  </body>
+</html>

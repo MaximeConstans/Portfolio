@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "ecriture titre";
+  src: url('police/Liu_Jian_Mao_Cao/LiuJianMaoCao-Regular.ttf');
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio,
+video {
+margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+ line-height: 1;
+ background-color: #fee923;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+ blockquote:before, blockquote:after, q:before, q:after {
+content: ''; content: none;
+}
+table {
+border-collapse: collapse; border-spacing: 0;
+}
+
+h1, h2, h3, nav ul li{
+  font-family: "ecriture titre";
+  font-weight: bold;
+}
+
+h2{
+  font-size: 2em;
+}
+
+h3{
+  font-size: 1.5em;
+}
+
+p{
+  font-size: 1em;
+  padding: 10px;
+  text-indent : 20px;
+}
+
+label{
+  font-size: 1em;
+  font-weight: bold;
+  color: #777;
+}
+
+b{
+  font-weight: bold;
+}
+
+/*___________________HEADER___________________*/
+
+header {
+    background-image:url(images/banner.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:50% 75%;
+    padding:100px;
+}
+
+h1{
+  font-size: 3em;
+  text-align: center;
+}
+
+/*___________________NAVIGATION___________________*/
+
+nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav img{
+  display:block;
+  width: 125px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+nav ul{
+  width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: solid black 1px;
+}
+
+nav ul li{
+  text-align: center;
+  padding: 5px;
+}
+
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+/*___________________CORPS___________________*/
+
+.Description, .Evenements, .Inscription{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  margin: 5px;
+  padding: 10px;
+}
+
+/*___________________DESCRIPTION___________________*/
+
+.Description{
+  border: solid black 1px;
+  border-bottom: 0px;
+}
+
+.Description img{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.Description #verre{
+  width: 150px;
+}
+
+.Description #fille{
+  width: 250px;
+}
+
+/*___________________EVENEMENTS___________________*/
+
+.Evenements{
+  border: solid black 1px;
+}
+
+.Evenements .Evenement{
+  padding: 10px;
+  border: solid black 1px;
+  margin: 5px;
+}
+
+.Evenements .Evenement .gauche ul li{
+  padding : 10px;
+}
+
+.Evenements .Evenement .gauche, .Evenements .Evenement .droite{
+  background-color: #fee923;
+  padding: 5px;
+  width: 46%;
+  display: inline-block;
+  vertical-align: top;
+  border: solid black 1px;
+}
+
+iframe{
+  width: 100%;
+  height: 70%;
+}
+
+/*___________________INSCRIPTION___________________*/
+
+.Inscription{
+  border: solid black 1px;
+}
+
+.Inscription .InscriptionDroite, .Inscription .InscriptionGauche{
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.partie_formulaire{
+  margin: 2px;
+  display: block;
+}
+
+.InscriptionDroite input, .InscriptionGauche input{
+  width: 100px;
+}
+
+.Inscription p button{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+abbr{
+  text-decoration: none;
+}
+
+#telephone{
+  width: 100px;
+}
+
+/*___________________FOOTER___________________*/
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px;
+}
+
+footer img{
+  width: 50px;
+}
+
+/*___________________Version Ordinateur___________________*/
+@media screen and (min-width: 768px){
+  /*___________________HEADER___________________*/
+
+  /*___________________NAVIGATION___________________*/
+  nav{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+  }
+
+  nav img{
+    width: 100px;
+  }
+
+  nav ul{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 0px;
+  }
+
+  nav ul li a:hover{
+    color: grey;
+  }
+
+  /*___________________MAIN___________________*/
+  .Description, .Evenements, .Inscription, footer{
+    width: 750px;
+    margin: auto;
+  }
+
+  /*___________________DESCRIPTION___________________*/
+  .partie1{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Description p{
+    display: flex;
+    align-items: center;
+  }
+
+  .partie2{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  /*___________________EVENEMENTS___________________*/
+  .Evenements .EvenementNumPair, .Evenements .EvenementNumImpair{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .Evenements .Evenement .gauche, .Evenements .Evenement .droite{
+    width: 45.5%;
+  }
+
+  /*___________________INSCRIPTION___________________*/
+  .Inscription{
+    width: 730px;
+  }
+
+  .InscriptionDroie{
+    display: flex;
+    justify-content: center;
+  }
+  /*___________________FOOTER___________________*/
+}

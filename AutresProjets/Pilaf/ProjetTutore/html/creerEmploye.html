@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/maquette.css">
+    <title>CRÉER Employé</title>
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.png" alt="logo">
+      <h1>Societe Pilaf</h1>
+    </header>
+
+    <div class="corps">
+      <nav class="Principal">
+        <ul>
+          <li class="ElementImpaire"><a href="creerCommande.html">Achat</a></li>
+          <li><a href="consulterFacture.html">Banque</a></li>
+          <li class="ElementImpaire"><a href="creerClient.html">Client</a></li>
+          <li class="onEst"><a href="creerEmploye.html">Employé</a></li>
+          <li class="ElementImpaire"><a href="creerFournisseur.html">Fournisseur</a></li>
+          <li><a href="enregistrerHoraire.html">Horaire</a></li>
+          <li class="ElementImpaire"><a href="creerProduit.html">Produit</a></li>
+          <li><a href="enregistrerMouvementStock.html">Stock</a></li>
+          <li class="ElementImpaire"><a href="statsNbrEmploy.html">Statistique</a></li>
+          <li><a href="enregistrerVente.html">Vente</a></li>
+        </ul>
+      </nav>
+
+      <div class="useCase">
+        <nav>
+          <ul>
+            <li><a href="consulterEmploye.html">Consulter Employé</a></li>
+            <li class="onEst"><a href="creerEmploye.html">Créer Employé</a></li>
+          </ul>
+        </nav>
+
+        <div class="enregistrerEmploye casUtilisation">
+          <h2>CRÉER EMPLOYE</h2>
+          <br>
+          <table>
+                  <thead>
+                        <tr>
+                            <th>
+                              <div id="formulaire1">
+                                <form name="formulaire_inscription" action="à completer" method="get"></form>
+                                  <h3> Nouvel Employé </h3>
+                                  <img  src="https://assistance.leboncoin.info/hc/article_attachments/360003680859/ajouter_des_photos.PNG" alt="ajouter une image" >
+
+                                  <th>
+                                    <p>Nom:<br><input type="text" class="idProd" placeholder="Nom"></p>
+                                    <p>Prénom:<br><input type="text" class="idProd" placeholder="Prénom"></p>
+                                    <p>Sexe:<br><select>
+                                     <option value="entree">Masculin</option>
+                                     <option value="entree">Feminin</option>
+                                   </select></p>
+                                    <p>Poste occupé:<br><input type="text" class="idProd" placeholder="Libelé poste"></p>
+                                    <p>Type de contrat:<br><select>
+                                     <option value="entree">CDI</option>
+                                     <option value="entree">CDD</option>
+                                   </select></p>
+                                    <p>Salaire mensuel:<br><input type="text" class="idProd" placeholder="Salaire mensuel"></p>
+                                    <p>Temps de travail:<input type="number" class="idProd" placeholder="0" min="0" max="168"></p>
+                                    <p>Téléphone:<br><input type="number" class="idProd" placeholder="Téléphone"></p>
+                                    <p>Numéro de sécurité sociale:<br><input type="text" class="idProd" placeholder="Numéro de sécurité"></p>
+                                    <p>Date de naissance:<br><input type="date" class="idProd" placeholder="Date de naissance"></p>
+                                  </th>
+                                  <th>
+                                    <p>Adresse mail:<br><input type="email" class="idProd" placeholder="Adresse mail"></p>
+                                    <p>Adresse(rue):<br><input type="text" class="idProd" placeholder="Rue"></p>
+                                    <p>Adresse(ville):<br><input type="text" class="idProd" placeholder="Ville"></p>
+                                    <p>Adresse(Code postal):<br><input type="number" class="idProd" placeholder="Code postal" min="01000" max="97680"></p>
+                                    <p>Lieu de naissance:<br><input type="text" class="idProd" placeholder="Lieu de naissance"></p>
+                                    <p>Situation personnelle:<br><select>
+                                     <option value="entree">Marié</option>
+                                     <option value="entree">Célibataire</option>
+                                     <option value="entree">Pacsé</option>
+                                     <option value="entree">Concubinage</option>
+                                     <option value="entree">Autre</option>
+                                   </select></p>
+                                    <p>Entrée dans l'entreprise:<br><input type="date" class="idProd" placeholder="Entrée dans l'entreprise"></p>
+                                    <p>Dernière visite médicale:<br><input type="date" class="idProd" placeholder="Dernière visite médicale"></p>
+                                    <p>RIB:<br><input type="file" class="idProd" placeholder=""></p>
+                                  </th>
+                              </div>
+                            </th>
+                        </tr>
+                   </thead>
+                   <tbody>
+                   </tbody>
+          </table>
+          <br>
+          <div class="Confirmation">
+            <a href="consulterEmploye.html" class="Valider">Valider</a>
+            <a href="enregistrerEmploye.html" class="boutonPasSur">Annuler</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

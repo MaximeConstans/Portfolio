@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/maquette.css">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.png" alt="logo">
+      <h1>Societe Pilaf</h1>
+    </header>
+
+    <div class="corps">
+      <nav class="Principal">
+        <ul>
+          <li class="ElementImpaire"><a href="creerCommande.html">Achat</a></li>
+          <li><a href="consulterFacture.html">Banque</a></li>
+          <li class="ElementImpaire"><a href="creerClient.html">Client</a></li>
+          <li><a href="creerEmploye.html">Employé</a></li>
+          <li class="ElementImpaire"><a href="creerFournisseur.html">Fournisseur</a></li>
+          <li><a href="enregistrerHoraire.html">Horaire</a></li>
+          <li class="ElementImpaire"><a href="creerProduit.html">Produit</a></li>
+          <li><a href="enregistrerMouvementStock.html">Stock</a></li>
+          <li class="ElementImpaire onEst"><a href="statsNbrEmploy.html">Statistique</a></li>
+          <li><a href="enregistrerVente.html">Vente</a></li>
+        </ul>
+      </nav>
+
+      <div class="useCase">
+        <nav>
+          <ul>
+            <li><a href="statsNbrEmploy.html">Nombre d'horaire d'employé par jour</a></li>
+            <li><a href="NbrVente.html">Nombre de ventes par jour</a></li>
+            <li><a class="onEst" href="NbrAchat.html">Nombre d’achat par jour</a></li>
+          </ul>
+        </nav>
+		
+	    <section id="NbrVenteAchat">
+			<article>
+				<h2>STATISTIQUES NOMBRE D’ACHAT PAR JOUR</h2>
+				<table class="tableAchat">
+					<tr>
+						<td class="backColor">
+						<label for="JourDebut">De:</label>
+						<input class="date" type="datetime-local" id="txtDate" value="2020-06-03T08:00" min="2015-01-01"/>
+						<label for="JourFin">à</label>
+						<input class="date" type="datetime-local" id="txtDate" value="2020-06-20T20:00" min="2015-01-01"/>
+						</td>
+						<td class="backColor">
+							<a>Le Monntant est de </a>
+							<a class="nbr">5 957,00 €</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="ligne2_table1" colspan="3">
+							<button class="boutonSur">Valider</button>
+						</td>
+					</tr>
+				</table>
+			</article>	
+
+			<article>
+
+				<table class="tableAchat">
+					<tr>
+						<th class="ligneAvant_table2" colspan="5">
+							<a>Il y a en total </a>
+							<a class="nbr"> 8</a>
+							<a>produit(s) trouvé(s)</a>
+						</th>
+					<tr>
+					<tr>
+						<th class="ligne1_table2">
+							<label for="DésignationAchat">Désignation</label>
+							<div class="fleche">
+								<div class="to_top"></div>
+								<div class="to_bottom"></div>
+							</div>							
+						</th>
+						<th class="ligne1_table2">
+							<label for="Fournisseur">Fournisseur</label>
+							<div class="fleche">
+								<div class="to_top"></div>
+								<div class="to_bottom"></div>
+							</div>
+						</th>
+						<th class="ligne1_table2">
+							<label for="PrixAchat">Prix</label>
+							<div class="fleche">
+								<div class="to_top"></div>
+								<div class="to_bottom"></div>
+							</div>							
+						</th>
+						<th class="ligne1_table2">					
+							<label for="Quantité">Quantité</label>
+						</th>
+						<th class="ligne1_table2">						
+							<label for="Montant">Montant</label>
+						</th>						
+					</tr>
+					
+					
+										
+					
+					
+					<tr>
+						<td class="DésignationAchat">
+							<label for="DésignationAchat">Ananas</label>
+						</td>
+						<td class="Fournisseur">
+							<label for="Fournisseur">Fruit-Fruit</label>
+						</td>						
+						<td class="PrixAchat ">
+							<label for="PrixAchat">1,10 €</label>
+						</td>
+
+						<td class="Total">
+							<label for="QuantitéTotal">550</label>
+						</td>						
+						<td class="Total">
+							<label for="Montant Total">&nbsp;&nbsp;605,00</label>
+							<a>€</a>
+						</td>					
+					</tr>
+					
+					<tr>
+						<td class="DésignationAchat ElementPaire">
+							<label for="DésignationAchat">Aubergine</label>
+						</td>
+						<td class="Fournisseur ElementPaire">
+							<label for="Fournisseur">Légume-Bio</label>
+						</td>						
+						<td class="PrixAchat ElementPaire">
+							<label for="PrixAchat">3,60 €</label>
+						</td>
+						<td class="Total ElementPaire">
+							<label for="QuantitéTotal">500</label>
+						</td>						
+						<td class="Total ElementPaire">
+							<label for="Montant Total">1 800,00</label>
+							<a>€</a>
+						</td>						
+					</tr>
+					
+					<tr>
+						<td class="DésignationAchat">					
+							<label for="DésignationAchat">Citrouill</label>
+						</td>
+						<td class="Fournisseur">
+							<label for="Fournisseur">Grand-Fruit</label>
+						</td>						
+						<td class="PrixAchat">
+							<label for="PrixAchat">2,81 €</label>
+						</td>
+						<td class="Total">
+							<label for="QuantitéTotal">450</label>
+						</td>						
+						<td class="Total">
+							<label for="Montant Total">1 264,50</label>
+							<a>€</a>
+						</td>						
+					</tr>
+					
+					<tr>
+						<td class="DésignationAchat ElementPaire">					
+							<label for="DésignationAchat">Madarine</label>
+						</td>
+						<td class="Fournisseur ElementPaire ">
+							<label for="Fournisseur">Fruit-Bio</label>
+						</td>						
+						<td class="PrixAchat ElementPaire ">
+							<label for="PrixAchat ">2,00 €</label>
+						</td>
+						<td class="Total ElementPaire">
+							<label for="QuantitéTotal">350</label>
+						</td>						
+						<td class="Total ElementPaire">
+							<label for="Montant Total">&nbsp;&nbsp;700,00</label>
+							<a>€</a>
+						</td>					
+					</tr>
+					
+					<tr>
+						<td class="DésignationAchat">	
+							<label for="DésignationAchat">Coriandre</label>
+						</td>
+						<td class="Fournisseur">
+							<label for="Fournisseur">Légume-Nature</label>
+						</td>						
+						<td class="PrixAchat">
+							<label for="PrixAchat">2,50 €</label>
+						</td>						
+						</td>
+						<td class="Total">
+							<label for="QuantitéTotal">300</label>
+						</td>						
+						<td class="Total">
+							<label for="Montant Total">&nbsp;&nbsp;750,00</label>
+							<a>€</a>
+						</td>							
+					</tr>
+					
+					<tr>
+						<td class="DésignationAchat ElementPaire">
+							<label for="DésignationAchat">Pasteque</label>
+						</td>
+						<td class="Fournisseur ElementPaire">
+							<label for="Fournisseur">Fruit-Asia</label>
+						</td>						
+						<td class="PrixAchat ElementPaire">
+							<label for="PrixAchat">1,75 €</label>
+						</td>
+						<td class="Total ElementPaire">
+							<label for="QuantitéTotal">250</label>
+						</td>						
+						<td class="Total ElementPaire">
+							<label for="Montant Total">&nbsp;&nbsp;437,50</label>
+							<a>€</a>
+						</td>						
+					</tr>
+					
+					<tr>
+						<td class="DésignationAchat">
+							<label for="DésignationAchat">Concombre</label>
+						</td>
+						<td class="Fournisseur">
+							<label for="Fournisseur">Légume-France</label>
+						</td>						
+						<td class="PrixAchat">
+							<label for="PrixAchat">0,50 €</label>
+						</td>
+						<td class="Total">
+							<label for="QuantitéTotal">200</label>
+						</td>						
+						<td class="Total">
+							<label for="Montant Total">&nbsp;&nbsp;100,00</label>
+							<a>€</a>
+						</td>						
+					</tr>
+			
+					<tr>
+						<td class="DésignationAchat ElementPaire">						
+							<label for="DésignationAchat">Banana</label>
+						</td>
+						<td class="Fournisseur ElementPaire ">
+							<label for="Fournisseur">Fruit-Aimer</label>
+						</td>						
+						<td class="PrixAchat ElementPaire ">
+							<label for="PrixAchat">1,50 €</label>
+						</td>
+						<td class="Total ElementPaire">
+							<label for="QuantitéTotal">200</label>
+						</td>						
+						<td class="Total ElementPaire">
+							<label for="Montant Total">&nbsp;&nbsp;300,00</label>
+							<a>€</a>
+						</td>												
+					</tr>
+
+					
+									
+	
+				</table>						
+			</article>							
+		
+		</section>
+		
+      </div>
+
+    </div>
+
+  </body>
+</html>
